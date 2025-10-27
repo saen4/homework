@@ -1,0 +1,33 @@
+.application-form__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px 80px;
+    border: none;
+    padding: 0;
+    margin: 0 0 40px;
+}
+
+.application-form__group-name {
+    margin: 0 0 42px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.application-form__icon {
+    color: #ACB5BD;
+}
+
+.application-form__inner-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+.application-form__inner-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin: 0 0 28px;
+}

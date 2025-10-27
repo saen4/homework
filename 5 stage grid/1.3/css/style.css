@@ -1,0 +1,17 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/header.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/footer.css";
+@import "blocks/btn.css";
+@import "blocks/social.css";
+@import "blocks/contacts.css";
+@import "blocks/safety.css";
+@import "blocks/aside.css";

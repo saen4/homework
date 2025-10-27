@@ -1,0 +1,18 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/visually-hidden.css";
+@import "global/container.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/header.css";
+@import "blocks/footer.css";
+@import "blocks/btn.css";
+@import "blocks/social.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/card-tour.css";
+@import "blocks/cards-tour.css";
+@import "blocks/special-card-tour.css";
+@import "blocks/special-cards.css"

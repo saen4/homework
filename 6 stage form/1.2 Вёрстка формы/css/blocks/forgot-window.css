@@ -1,0 +1,5 @@
+.forgot-window {
+    min-height: calc(100vh - 171px);
+    display: flex;
+    align-items: center;
+}

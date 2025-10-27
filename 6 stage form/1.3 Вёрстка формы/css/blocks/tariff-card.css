@@ -1,0 +1,142 @@
+.tariff-card {
+    padding: 32px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 28px;
+    border: 1px solid #E2E4E8;
+    width: 340px;
+}
+
+.tariff-card__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #343033;
+    margin: 0 0 29px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tariff-card__special {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 115%;
+    color: #ffffff;
+    background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
+    padding: 6px 12px;
+    border-radius: 60px;
+}
+
+.tariff-card__conditions-list {
+    margin: 0 0 23px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tariff-card__conditions-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.tariff-card__conditions-item:nth-child(2) {
+    position: relative;
+}
+
+.tariff-card__conditions-item:nth-child(2)::before {
+    width: 2px;
+    height: 34px;
+    background-color: #999899;
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: 6px;
+}
+
+.tariff-card__conditions-item:nth-child(2)::after {
+    width: 2px;
+    height: 34px;
+    background-color: #999899;
+    content: "";
+    position: absolute;
+    right: -33px;
+    top: 6px;
+}
+
+.tariff-card__conditions-quantity {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343033;
+}
+
+.tariff-card__conditions-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #343033;
+}
+
+.tariff-card__options-list {
+    margin: 0 0 12px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.tariff-card__options-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.tariff-card__options-name {
+    color: #343033;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    width: 156px;
+}
+
+.tariff-card__link {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin: 0 0 28px;
+}
+
+.tariff-card__link:hover .tariff-card__link-icon {
+   color: #9D1881; 
+}
+
+.tariff-card__link:hover .tariff-card__link-text {
+    color: #9D1881; 
+ }
+
+.tariff-card__link-text {
+    color: #259DD6;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 116%;
+}
+
+.tariff-card__link-icon {
+    color: #259DD6;
+}
+
+.tariff-card__form-group {
+    border: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

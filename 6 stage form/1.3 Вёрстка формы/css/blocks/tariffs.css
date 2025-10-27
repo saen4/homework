@@ -1,0 +1,26 @@
+.tariffs {
+    margin: 0 0 100px;
+}
+
+.tariffs__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #343033;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 60px;
+}
+
+.tariffs__title-name {
+    color: #259DD6;
+}
+
+.tariffs__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}

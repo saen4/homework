@@ -1,0 +1,50 @@
+.payment {
+    margin: 0 0 100px;
+}
+
+.payment__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: #1E222E;
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+.payment__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    gap: 40px;
+}
+
+.payment__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment__item svg {
+    margin-bottom: 20px;
+}
+
+.payment__caption {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #1E222E;
+    margin: 0 0 12px;
+}
+
+.payment__note {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #1E222E;
+}

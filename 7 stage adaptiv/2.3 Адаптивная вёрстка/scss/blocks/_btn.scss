@@ -1,0 +1,41 @@
+.btn {
+  outline: none;
+  display: block;
+  border-radius: 8px;
+  padding: 10px;
+  color: $color-white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: $color-royal-blue;
+
+  @include vp-1023 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &:hover {
+    background-color: $color-free-speech-blue;
+  }
+
+  &:focus-visible {
+    background-color: $color-free-speech-blue;
+    outline: none;
+  }
+
+  &--invert {
+    color: $color-royal-blue;
+    background-color: $color-white;
+
+    &:hover {
+    background-color: $color-solitude-3;
+  }
+
+  &:focus-visible {
+    background-color: $color-solitude-3;
+    outline: none;
+  }
+  }
+}

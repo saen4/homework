@@ -1,0 +1,83 @@
+.banner {
+
+    margin: 0 0 60px 0;
+
+    @include vp-1024 {
+        margin: 0 0 100px 0;
+    }
+
+    @include vp-1304 {
+        margin: 0 0 120px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-alice-blue;
+        border-radius: 16px;
+        padding: 8px 0 8px 20px;
+
+        @include vp-768 {
+            padding: 25px 24px;
+            position: relative;
+        }
+
+        @include vp-1024 {
+            padding: 48px 100px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: $color-black-russian;
+        margin: 0;
+
+        @include vp-1024 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0;
+        color: $color-black-russian;
+        display: block;
+
+        @include vp-1024 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    &__image {
+        @include vp-768 {
+            width: 174px;
+            position: absolute;
+            right: 40px;
+            top: -16px;
+        }
+
+        @include vp-1024 {
+            width: 260px;
+            top: -20px;
+        }
+
+        @include vp-1304 {
+            right: 184px;
+            top: -21px;
+        }
+    }
+}

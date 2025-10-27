@@ -1,0 +1,141 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order__wrapper {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 24px 0px rgba(32, 35, 52, 0.1);
+    margin: 0 0 28px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 940px;
+}
+
+.order__title {
+    color: #343033;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.order__steps {
+    margin: 0 0 36px;
+}
+
+.order__steps-list {
+    margin: 0;
+    padding: 0 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.order__steps-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.order__steps-item:nth-child(-n+3)::before {
+    background-color: #F0F0F0;
+    width: 86px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: 24px;
+}
+
+.order__step {
+    color: #858385;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 115%;
+    padding: 4px 14px;
+    background-color: #F0F0F0;
+    border-radius: 60px;
+    display: block;
+    position: relative;
+}
+
+.order__steps-item--active .order__step {
+    background-color: #239DD6;
+    color: #ffffff;
+}
+
+.order__step-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 115%;
+    color: #858385;
+}
+
+.order__steps-item--active .order__step-title {
+    color: #343033;
+}
+
+.order__field-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 0 20px;
+}
+
+.order__form {
+    padding: 36px 0 0 0;
+    border-top: 1px solid #F0F0F0;
+}
+
+.order__form-group {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 28px;
+}
+
+.order__form-group-name {
+    color: #858385;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+    margin: 0 0 12px;
+    user-select: none;
+}
+
+.order__form-group--radio .order__form-group-name {
+    margin: 0 0 20px;
+}
+
+.order__inner {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    justify-items: flex-end;
+}
+
+.order__protection {
+   color: #858385; 
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 120%;
+   margin: 0 0 100px 0;
+   display: block;
+}
+
+.order__link {
+   color: #239DD6; 
+}
+
+.order__link:hover {
+    color: #9D1881; 
+ }

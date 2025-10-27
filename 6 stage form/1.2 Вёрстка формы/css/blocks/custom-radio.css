@@ -1,0 +1,53 @@
+.custom-radio {
+    position: relative;
+}
+
+.custom-radio--error .custom-radio__label::before {
+    border: 1px solid #F6514B;
+}
+
+.custom-radio__label {
+    padding: 0 0 0 30px;
+    cursor: pointer;
+}
+
+.custom-radio__label:hover::before {
+    border: 1px solid #3356D7;
+}
+
+.custom-radio__field:focus-visible + .custom-radio__label::before {
+    border: 1px solid #A0B4FF;
+}
+
+.custom-radio__field:checked + .custom-radio__label .custom-radio__text::after {
+    display: block;
+}
+
+.custom-radio__label::before {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CDCFDE;
+    border-radius: 50px;
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.custom-radio__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #1E222E;
+}
+
+.custom-radio__text::after {
+    width: 20px;
+    height: 20px;
+    border: 6px solid #476BF0;
+    border-radius: 50px;
+    content: "";
+    position: absolute;
+    left: 0;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+}

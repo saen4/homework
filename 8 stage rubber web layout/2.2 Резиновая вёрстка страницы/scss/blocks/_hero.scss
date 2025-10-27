@@ -1,0 +1,186 @@
+.hero {
+    margin: 0 0 120px 0;
+    position: relative;
+
+    @include vp-1023 {
+        margin: 0 0 80px 0;
+    }
+
+    @include vp-767 {
+        margin: 0 0 60px 0;
+    }
+
+    &__image-wrapper {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+
+        @include vp-767 {
+            position: static;
+            margin: 0 0 20px 0;
+            height: 300px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 69.07%, #000000 100%);
+            top: 0;
+            left: 0;
+
+            @include vp-767 {
+                display: none;
+            }
+
+        }
+    }
+
+    &__picture {
+        width: 100%;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    &--embankment {
+        display: flex;
+        flex-direction: column;
+
+        .hero__image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .hero__image-wrapper {
+            position: static;
+            height: 740px;
+
+            @include vp-1023 {
+                height: 460px;
+            }
+
+            @include vp-767 {
+                height: 300px;
+                margin: 0;
+            }
+        }
+
+        .hero__title {
+            font-family: $ff-tenor;
+            font-size: 34px;
+            line-height: 44px;
+            letter-spacing: -0.08em;
+            text-transform: uppercase;
+            color: $color-fallow;
+            text-align: center;
+            margin: 0 0 120px 0;
+            max-width: unset;
+
+            @include vp-1023 {
+                font-size: 24px;
+                line-height: 30px;
+                margin: 0 0 80px 0;
+            }
+
+            @include vp-767 {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 0 0 60px 0;
+            }
+        }
+
+        .hero__title-text {
+            display: block;
+        }
+
+    }
+
+
+    &--hall {
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+        margin: 0;
+
+        @include vp-1023 {
+            min-height: 280px;
+        }
+
+        @include vp-767 {
+            min-height: 200px;
+        }
+
+
+
+        .hero__image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .hero__image-wrapper {
+            position: static;
+            flex: 1 1 auto;
+
+            @include vp-767 {
+                margin: 0;
+                height: 200px;
+            }
+        }
+    }
+
+
+
+    &__wrapper {
+        padding: 30px;
+        min-height: 740px;
+        display: flex;
+        align-items: flex-end;
+
+        @include vp-1023 {
+            min-height: 460px;
+        }
+
+        @include vp-767 {
+            min-height: unset;
+            padding: 0;
+        }
+    }
+
+    &__title {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -0.08em;
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        max-width: 800px;
+        margin: 0 auto;
+
+        @include vp-1023 {
+            font-size: 40px;
+            line-height: 46px;
+            max-width: 520px;
+        }
+
+        @include vp-767 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+}

@@ -1,0 +1,61 @@
+.search-card {
+
+    width: 330px;
+
+    @include vp-768 {
+        width: 728px;
+    }
+
+    @include vp-1024 {
+        width: 806px;
+    }
+
+    &__link {
+        outline: none;
+    }
+
+    &__link:hover &__title {
+        color: $color-royal-blue-1;
+    }
+
+    &__link:focus-visible &__title {
+        color: $color-royal-blue-1;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 12px 0;
+        padding: 0;
+        color: $color-black-russian;
+
+        @include vp-768 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        @include vp-1024 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__text {
+        color: $color-black-russian;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        padding: 0;
+
+        @include vp-1024 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    &__accent {
+        font-weight: 700;
+    }
+}

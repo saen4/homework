@@ -1,0 +1,124 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $color-white-smoke;
+  z-index: -1;
+  flex-direction: column;
+  padding: 140px 80px 40px 390px;
+  display: none;
+  pointer-events: none;
+  $root: &;
+
+  @media (max-width: 1300px) {
+    padding: 140px 80px 40px 80px;
+  }
+
+  .header--open & {
+    display: flex;
+    pointer-events: all;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0 0 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+    color: $color-dark-gray;
+
+    @media (max-width: 1400px) {
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      #{$root}__link-icon {
+        transform: translate(-60px, -50%);
+        opacity: 1;
+      }
+
+      #{$root}__shadow-text {
+        display: block;
+      }
+    }
+  }
+
+  &__link-icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(-70px, -50%);
+    opacity: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  &__shadow-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 87px;
+    color: $color-black;
+    display: none;
+
+    @media (max-width: 1400px) {
+      height: 77px;
+    }
+
+    @media (max-width: 1300px) {
+      height: 67px;
+    }
+  }
+
+  &__bottom {
+    margin: auto 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__language-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__language-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+    font-weight: 500;
+
+    &--active {
+      color: $color-dark-gray;
+    }
+  }
+
+  &__partner {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color-black;
+  }
+}

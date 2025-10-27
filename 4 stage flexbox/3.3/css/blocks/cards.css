@@ -1,0 +1,16 @@
+.cards {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: calc(50% - 30px);
+}
+
+.cards--blocks .card {
+    width: calc(25% - 24px);
+}

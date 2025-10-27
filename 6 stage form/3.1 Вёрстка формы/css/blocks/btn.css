@@ -1,0 +1,14 @@
+.btn {
+    background-color: #87F29A;
+    padding: 12px;
+    width: 153px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}

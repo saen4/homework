@@ -1,0 +1,40 @@
+.small-card-advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.small-card-advantages__ikon {
+    background-color: #476BF0;
+    border-radius: 12px;
+    padding: 17px;
+    width: 64px;
+    height: 64px;
+}
+
+.small-card-advantages__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.small-card-advantages__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #1E222E;
+    margin: 0;
+}
+
+.small-card-advantages__note {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #696E82;
+    text-align: center;
+}

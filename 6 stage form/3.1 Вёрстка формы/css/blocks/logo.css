@@ -1,0 +1,35 @@
+.logo {
+    display: flex;
+}
+
+.logo--reviews {
+    margin: 0 0 16px;
+}
+
+.logo__link-green {
+    font-family: "Press Start 2P", "Arial", sans-serif;
+    color: #87F29A;
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 84px;
+    text-transform: uppercase;
+}
+
+.logo__link-white {
+    font-family: "Press Start 2P", "Arial", sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 84px;
+    text-transform: uppercase;
+}
+
+.logo--footer .logo__link-green {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.logo--footer .logo__link-white {
+    font-size: 24px;
+    line-height: 24px;
+}

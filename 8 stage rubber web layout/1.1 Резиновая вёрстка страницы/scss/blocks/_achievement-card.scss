@@ -1,0 +1,71 @@
+.achievement-card {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0 20px;
+  border-radius: 16px;
+  background: $color-gradient;
+
+  @include vp-768 {
+    padding: 28px 28px 38px;
+    flex-direction: column;
+  }
+
+  @include vp-1024 {
+    padding: 40px 40px 54px;
+  }
+
+  @include vp-1304 {
+    padding: 40px;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    color: $color-white;
+
+    @include vp-768 {
+      margin: 0 0 28px 0;
+    }
+
+    @include vp-1024 {
+      margin: 0 0 40px 0;
+    }
+
+    @include vp-1304 {
+      margin: 0 0 46px 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-white;
+
+    @include vp-1024 {
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-white;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include vp-1304 {
+      width: 205px;
+    }
+  }
+}

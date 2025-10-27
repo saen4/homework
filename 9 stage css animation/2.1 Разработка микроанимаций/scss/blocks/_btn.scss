@@ -1,0 +1,85 @@
+.btn {
+  $root: &;
+
+  position: relative;
+  background-color: transparent;
+  border: 1px solid $color-black;
+  cursor: pointer;
+  width: 240px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-black;
+  display: flex;
+  justify-content: center;
+
+  &:not(.btn--plus, .btn--icon) {
+    #{$root}__text {
+      color: $color-white;
+      mix-blend-mode: difference;
+    }
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $color-black;
+      clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+      transition: $transition-300;
+    }
+
+    &:hover::before {
+      clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+  }
+
+  &--plus {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    gap: 20px;
+    font-size: 20px;
+    line-height: 24px;
+
+    #{$root}__icon {
+      height: 32px;
+      width: 32px;
+      transition: transform $transition-300;
+    }
+
+    &:hover,
+    &:focus-visible {
+      #{$root}__icon {
+        transform: scale(1.25) rotate(90deg);
+      }
+    }
+  }
+
+  &--icon {
+    border-radius: 50%;
+    border: none;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    background-color: $color-black-20;
+    transition: transform $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.33);
+      background-color: $color-black;
+    }
+  }
+
+  &__text {
+    z-index: 10;
+    color: $color-black;
+  }
+}

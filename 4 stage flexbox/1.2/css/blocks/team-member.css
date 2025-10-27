@@ -1,0 +1,72 @@
+.team-member {
+    width: 600px;
+    background-color: #F2F3EE;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.team-member__position {
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1D252D;
+    margin: 0 0 5px;
+}
+
+.team-member__name {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1D252D;
+    margin: 0 0 20px;
+}
+
+.team-member__main {
+    display: flex;
+    gap: 30px;
+}
+
+.team-member__about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team-member__discription {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1D252D;
+    margin: 0;
+}
+
+.team-member__experience {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: right;
+    color: #1D252D;
+
+}
+
+.team-member__links {
+    display: flex;
+    margin: auto 0 0;
+    gap: 10px;
+}
+
+.team-member__link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1D252D;
+    background-color: #D6D2C4;
+    border-radius: 40px;
+    padding: 7px 39px;
+    width: 140px;
+}
+
+.team-member__link--call {
+    background-color: #F2F3EE;
+}

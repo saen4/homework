@@ -1,0 +1,156 @@
+.feature-card {
+    border: 1px solid $color-fallow;
+    border-bottom: none;
+    border-radius: 600px 600px 0 0;
+
+    @include vp-1023 {
+        border: none;
+    }
+
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding: 100px 100px 58px;
+
+        @include vp-1023 {
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            padding: 0;
+            gap: 40px;
+        }
+
+        @include vp-767 {
+            grid-template-columns: repeat(2, 120px);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        @include vp-1023 {
+            &:nth-child(1) {
+                margin-left: 5px;
+            }
+
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+
+            &:nth-child(4) {
+                margin-top: 80px;
+            }
+        }
+
+        @include vp-767 {
+            gap: 0;
+
+            &:nth-child(1) {
+                margin-left: 0;
+                margin-top: 40px;
+            }
+
+            &:nth-child(2) {
+                margin-top: -10px;
+            }
+
+            &:nth-child(3) {
+                margin-top: -20px;
+            }
+
+            &:nth-child(4) {
+                margin-top: -20px;
+            }
+        }
+    }
+
+    &__value-wrapper {
+        display: flex;
+        gap: 12px;
+        align-items: flex-end;
+
+        @include vp-767 {
+            gap: 5px;
+        }
+    }
+
+    &__value {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-fallow;
+
+        @include vp-1023 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        @include vp-767 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+    }
+
+    &__unit {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: center;
+        color: $color-fallow;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0;
+        color: $color-white;
+        text-align: center;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            width: 150px;
+        }
+
+        @include vp-767 {
+            width: 120px;
+        }
+    }
+
+    &__icon {
+        display: none;
+
+        @include vp-1023 {
+            display: block;
+        }
+
+        &:nth-child(1) {
+            margin-bottom: 10px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.burger-menu {
+
+    display: none;
+    position: relative;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        justify-content: space-between;
+        padding: 180px 200px 230px;
+
+
+
+        @media (max-width: 1439px) {
+            grid-template-columns: repeat(3, 250px);
+            padding: 100px 0 200px;
+        }
+
+        @include vp-1023 {
+            grid-template-columns: repeat(2, 280px);
+            padding: 80px 34px;
+            row-gap: 80px;
+        }
+
+        @include vp-767 {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0 30px;
+            gap: 40px;
+            margin: 0 0 8px 0;
+        }
+
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include vp-1023 {
+            gap: 35px;
+        }
+
+        @include vp-767 {
+            gap: 20px;
+        }
+    }
+
+    &__list:nth-child(2) {
+
+        @include vp-1023 {
+            grid-row: 2/3;
+        }
+
+    }
+
+    &__link {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0;
+        color: $color-white-50;
+
+        &:hover {
+            color: $color-white;
+        }
+
+        &:focus-visible {
+            outline: none;
+            color: $color-white;
+        }
+
+        @media (max-width: 1439px) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+
+        &--caps {
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 28px;
+
+            @media (max-width: 1439px) {
+                font-size: 22px;
+                line-height: 24px;
+            }
+
+            @include vp-1023 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            @include vp-767 {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &__link-buy {
+        display: none;
+
+        @include vp-767 {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    &__link-buy-text {
+        color: $color-white;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    &__link-buy-icon {
+        color: $color-white;
+    }
+}

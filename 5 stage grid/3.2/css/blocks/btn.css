@@ -1,0 +1,17 @@
+.btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2B3143;
+    border-radius: 8px;
+    padding: 12px 20px;
+    height: 40px;
+}
+
+.btn--qr {
+    width: 40px;
+    padding: 10px;
+}

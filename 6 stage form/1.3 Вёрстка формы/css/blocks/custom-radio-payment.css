@@ -1,0 +1,89 @@
+.custom-radio-payment {
+    width: 276px;
+    position: relative;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label .custom-radio-payment__icon {
+    display: block;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label::before {
+    background-color: #259DD6;
+}
+
+.custom-radio-payment__label {
+    width: 100%;
+    border: 2px solid #E2E4E8;
+    border-radius: 20px;
+    padding: 11px 16px 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+}
+
+.custom-radio-payment__label:hover {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__label:focus-visible {
+    border: 2px solid #259DD6;
+    outline: none;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__label::before {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #259DD6;
+    border-radius: 50px;
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.custom-radio-payment__price {
+    color: #343033;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 8px;
+}
+
+.custom-radio-payment__mouth {
+    color: #343033;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.custom-radio-payment__text {
+    color: #343033;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    display: block;
+}
+
+.custom-radio-payment__condition {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #343033;
+    margin: 0 0 8px;
+}
+
+.custom-radio-payment__icon {
+    color: #ffffff;
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    display: none;
+}

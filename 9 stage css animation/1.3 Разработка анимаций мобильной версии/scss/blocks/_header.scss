@@ -1,0 +1,134 @@
+.header {
+  padding: 30px 0;
+  background-color: $color-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    margin: 0 20px 0 0;
+
+    svg {
+      width: 238px;
+      height: 12px;
+    }
+  }
+
+  &--open {
+    .burger {
+      .burger__line {
+        background-color: $color-white;
+        transition: top 0.3s ease-in, transform 0.3s ease-in 0.3s;
+
+        &--top {
+          transform: rotate(45deg);
+          top: 50%;
+        }
+
+        &--bottom {
+          transform: rotate(-45deg);
+          top: 50%;
+        }
+      }
+    }
+
+    .burger-menu {
+      pointer-events: all;
+      opacity: 1;
+    }
+
+    .burger-menu__item {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity $transition-300 0.3s, transform $transition-300 0.3s;
+
+      &:nth-child(2) {
+        transition: opacity $transition-300 0.5s, transform $transition-300 0.5s;
+      }
+
+      &:nth-child(3) {
+        transition: opacity $transition-300 0.6s, transform $transition-300 0.6s;
+      }
+
+      &:nth-child(4) {
+        transition: opacity $transition-300 0.7s, transform $transition-300 0.7s;
+      }
+
+      &:nth-child(5) {
+        transition: opacity $transition-300 0.8s, transform $transition-300 0.8s;
+      }
+    }
+
+    ~.footer {
+      background-color: transparent;
+      z-index: 30;
+      position: fixed;
+      bottom: 0;
+      opacity: 0;
+      animation: footerFadeIn 0.3s forwards 1.1s;
+      transform: translateX(-30px);
+
+      .footer__logo {
+        svg {
+          color: $color-white;
+        }
+      }
+
+      .footer__copyright {
+        color: $color-white;
+      }
+
+      .footer__link {
+        color: $color-white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circleMouseSlideInDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes footerFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

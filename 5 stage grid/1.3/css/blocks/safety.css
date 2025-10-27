@@ -1,0 +1,143 @@
+.safety__content {
+    display: grid;
+    grid-template-columns: 1fr 290px;
+    grid-template-rows: repeat(4, auto);
+    gap: 20px 180px;
+    margin: 0 0 60px;
+}
+
+.safety__description {
+    grid-row: span 4;
+}
+
+.safety__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: #242424;
+    margin: 0 0 20px;
+}
+
+.safety__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #242424;
+    margin: 0 0 20px;
+}
+
+.safety__text-note {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #242424;
+    margin: 0 0 20px;
+}
+
+.safety__programm-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #242424;
+    margin: 0 0 10px;
+}
+
+.safety__programm-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+}
+
+.safety__programm__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #242424;
+}
+
+.safety__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #9E5FC4;
+    border: 1px solid #9E5FC4;
+    border-radius: 60px;
+    padding: 14px;
+    width: 290px;
+    text-align: center;
+}
+
+.safety__memo {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 535px 535px;
+    gap: 10px;
+    margin: 0 0 50px; 
+}
+
+.safety__memo-link {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 5px 10px;
+    background-color: #F6EEFB;
+    border-radius: 20px;
+    padding: 20px 23px;
+    min-height: 90px;
+}
+
+.safety__memo-icon {
+    grid-row: span 2;
+}
+
+.safety__memo-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #242424;
+}
+
+.safety__memo-description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: rgba(36, 36, 36, 0.5);
+}
+
+.safety__memo-phone {
+    grid-column: span 2;
+    background-color: #9E5FC4;
+    border-radius: 60px;
+    padding: 16px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.safety__memo-phone-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+
+.safety__memo-inner {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

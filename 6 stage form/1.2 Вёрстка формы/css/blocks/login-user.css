@@ -1,0 +1,19 @@
+.login-user__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 171px);
+}
+
+.login-user__reg {
+    font-size: 16px;
+    line-height: 20px;
+    color: #476BF0;
+    text-align: center;
+    display: block;
+}
+
+.login-user__reg:hover {
+    color: #3356D7;
+}

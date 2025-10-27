@@ -1,0 +1,59 @@
+.pagination {
+
+    margin: 0 0 40px 0;
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+        counter-reset: pages 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+
+        @include vp-1024 {
+            margin: 0 0 60px 0;
+        }
+    }
+
+    &__item:not(:first-child):not(:last-child) {
+        counter-increment: pages 1;
+        position: relative;
+
+        &::after {
+            content: counter(pages);
+            position: absolute;
+            top: 11px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+
+    &__item--arrow {
+        background-color: $color-white-smoke;
+        border-radius: 8px;
+    }
+
+    &__link {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagination__item--not-active .pagination__link {
+        color: #AEAEAE;
+    }
+
+    .pagination__item--active .pagination__link {
+        color: $color-black-russian;
+    }
+}

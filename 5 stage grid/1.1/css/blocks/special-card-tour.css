@@ -1,0 +1,118 @@
+.special-card-tour {
+    background-color: #E0E5FA;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.special-card-tour-special-two {
+    background-color: #D2E8E5;
+}
+
+.special-card-tour-special-three {
+    background-color: #E0EFFA;
+    grid-row: span 2;
+    padding: 20px 30px;
+
+}
+
+.special-card--review {
+    grid-column: span 2;
+}
+
+.special-card-tour__img {
+    border-radius: 200px;
+    border: 4px solid #9E5FC4;
+}
+
+.special-card-tour__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #9E5FC4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.special-card-tour__county {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #242424;
+}
+
+.special-card-tour__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #242424;
+    margin: 0;
+}
+
+.special-card-tour__link {
+    background-color: #9E5FC4;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 46px;
+    min-width: 154px;
+    padding: 14px;
+    text-align: center;
+    border-radius: 60px;
+}
+
+.special-card-review {
+    display: flex;
+    padding: 30px 30px 20px;
+    background: linear-gradient(87.12deg, #5839B0 1.65%, #4162B8 100%);
+    border-radius: 24px;
+    gap: 40px;
+}
+
+.special-card-review__inner {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.special-card-review__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.special-card-review__link-wrap {
+    display: flex;
+    gap: 15px;
+}
+.special-card-review__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.special-card-review__link-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 0 5px;
+}
+
+.special-card-review__img {
+    width: 100px;
+    height: 100px;
+}

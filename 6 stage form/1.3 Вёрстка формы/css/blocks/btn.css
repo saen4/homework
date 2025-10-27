@@ -1,0 +1,83 @@
+.btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #ffffff;
+    padding: 18px;
+    width: 276px;
+    border: none;
+    border-radius: 18px;
+    background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
+    cursor: pointer;
+}
+
+
+.btn--try:hover {
+    background: #537CCB;
+    color: #FFFFFF; 
+}
+
+.btn--try:focus-visible {
+    background: #537CCB;
+    color: #FFFFFF;
+    outline: none; 
+}
+
+.btn--act {
+    background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+}
+
+.btn--act:hover {
+    background: #9548BD;
+    color: #FFFFFF; 
+}
+
+.btn--act:focus-visible {
+    background: #9548BD;
+    color: #FFFFFF;
+    outline: none; 
+}
+
+.btn--win {
+    background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
+}
+
+.btn--win:hover {
+    background: #D812AE;
+    color: #FFFFFF; 
+}
+
+.btn--win:focus-visible {
+    background: #D812AE;
+    color: #FFFFFF;
+    outline: none; 
+}
+
+.btn--order {
+    width: 131px;
+    background: none;
+    background-color: #239DD6;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 115%;
+    padding: 12px 20px;
+    grid-row: 2/3;
+}
+
+.btn--order:hover {
+    background-color: #9D1881;
+    color: #FFFFFF;
+}
+
+.btn--order:disabled {
+    background-color: #F0F0F0;
+    color: #858385;
+    cursor: not-allowed;
+}
+
+.btn--order:focus-visible {
+    background-color: #771061;
+    color: #FFFFFF;
+    outline: none;
+}

@@ -1,0 +1,113 @@
+.projects {
+
+    padding: 40px 0 0;
+
+    @include vp-767 {
+        padding: 0;
+    }
+
+    &__wrapper {
+        @include vp-767 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__filters-list {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 0 40px 0;
+
+        @include vp-767 {
+            display: none;
+        }
+    }
+
+    &__filters-menu {
+        display: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+        padding: 8px 16px;
+        border-radius: 60px;
+        background-color: $color-ecru-white;
+        color: $color-blue-charcoa;
+        border: none;
+        cursor: pointer;
+
+        @include vp-767 {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+
+    &__filters-link {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+        padding: 8px 16px;
+        border-radius: 60px;
+        background-color: $color-ecru-white;
+        color: $color-blue-charcoa;
+        display: block;
+
+        &--active {
+            background-color: $color-blue-charcoa;
+            color: $color-white;
+            pointer-events: none;
+        }
+
+        &:hover {
+            background-color: $color-chrome-white;
+        }
+
+        &:focus-visible {
+            outline: none;
+            background-color: $color-chrome-white;
+        }
+    }
+
+    &__view-toggle {
+        display: flex;
+        gap: 30px;
+        margin: 0 0 20px 0;
+
+        @include vp-767 {
+            justify-content: flex-end;
+            gap: 20px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.projects__list--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 0 20px;
+    border-top: 1px solid $color-iron;
+
+    @include vp-767 {
+        display: flex;
+        gap: 15px;
+        padding: 30px 0 15px;
+    }
+
+    .projects__item {
+        border-top: none;
+    }
+}

@@ -1,0 +1,9 @@
+.card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 32px;
+}
+
+.card-list__item--wide {
+    grid-column: span 2;
+}

@@ -1,0 +1,54 @@
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: sticky;
+    bottom: 0;
+}
+
+.footer__wrapper {
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: 326px 1fr 449px;
+    align-items: center;
+    justify-items: end;
+    gap: 32px;
+}
+
+.footer__wrapper-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__copyright {
+    width: 166px;
+    position: relative;
+    padding: 0 0 0 36px;
+}
+
+.footer__icon-copyright {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__copyright-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.footer__note {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    width: 230px;
+    text-align: right;
+}
+
+.footer__subscription {
+    display: flex;
+    gap: 16px;
+}

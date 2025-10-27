@@ -1,0 +1,19 @@
+.user-date__wrapper {
+    display: grid;
+    grid-template-columns: 280px 110px 110px 280px; 
+    gap: 60px;
+    justify-content: center;
+    align-items: end;
+}
+
+.user-date__inner-wrapper {
+    display: flex;
+    gap: 15px;
+    grid-column: span 2;
+    align-items: center;
+}
+
+.user-date__btn[disabled] {
+    background-color: rgba(60, 82, 230, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}

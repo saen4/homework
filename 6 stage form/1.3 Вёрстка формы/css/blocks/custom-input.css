@@ -1,0 +1,46 @@
+.custom-input {
+   width: 400px; 
+}
+
+.custom-input__field {
+    width: 100%;
+    font-family: inherit;
+    background-color: #FCFCFC;
+    border: 1px solid #F0F0F0;
+    padding: 11px 20px;
+    border-radius: 8px;
+    color: #343033;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+}
+
+.custom-input--error .custom-input__field {
+    border: 1px solid #F0F0F0;
+    background-color: #FBE2E0;
+}
+
+.custom-input__error-text {
+    color: #D72522;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 115%;
+}
+
+.custom-input__field::placeholder {
+    color: #BFBFBF;
+    user-select: none;
+}
+
+.custom-input__field.custom-input__field:hover {
+    border: 1px solid #BFBFBF; 
+}
+
+.custom-input__field.custom-input__field:focus-visible {
+    border: 1px solid #8DD6F8; 
+    outline: none;
+}
+
+.custom-input__field.custom-input__field:disabled {
+    background-color: #F6F6F6;
+}

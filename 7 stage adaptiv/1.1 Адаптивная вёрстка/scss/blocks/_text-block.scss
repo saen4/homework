@@ -1,0 +1,182 @@
+.text-block {
+  padding: 0 0 83px;
+
+  @include vp-1023 {
+    padding: 0 0 63px;
+  }
+
+  * {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    @include vp-1023 {
+      max-width: 600px;
+
+    }
+  }
+
+  img {
+    max-width: 1200px;
+    height: 540px;
+    margin: 0 auto 28px;
+
+    @include vp-1023 {
+      height: 380px;
+    }
+
+    @include vp-767 {
+      height: 440px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  figure {
+    margin: 0 auto 48px;
+
+    @include vp-767 {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  figure img {
+    width: 800px;
+    height: 400px;
+    margin: 0 0 12px;
+
+    @include vp-1023 {
+      width: 600px;
+      height: 300px;
+    }
+
+    @include vp-767 {
+      width: 335px;
+      height: 170px;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  figcaption {
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-light-grey-60;
+    text-align: right;
+
+    @include vp-767 {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  h1 {
+    max-width: 1200px;
+    margin: 0 auto 48px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 44px;
+    color: $color-zorba;
+    text-align: center;
+
+    @include vp-1023 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @include vp-767 {
+      margin: 0 auto 40px;
+    }
+  }
+
+  h2 {
+    margin: 48px auto 16px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 34px;
+    color: $color-zorba;
+
+    @include vp-1023 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      margin: 40px auto 20px;
+    }
+  }
+
+  p {
+    margin: 0 auto 16px;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  blockquote {
+    margin: 0 auto 48px;
+    padding: 20px 60px;
+    text-align: center;
+    background: linear-gradient(90deg, $color-steel-blue-80 0%, $color-mariner-80 100%);
+    border-radius: 120px;
+
+    @include vp-767 {
+      padding: 15px;
+      margin: 0 auto 40px;
+    }
+  }
+
+  blockquote p {
+    margin: 0 auto;
+  }
+
+  q {
+    font-style: italic;
+    color: $color-zorba;
+    letter-spacing: 0.08em;
+  }
+
+  a {
+    font-weight: 500;
+    color: $color-feldspar;
+
+    &:hover {
+      color: $color-zorba;
+    }
+
+    &:focus-visible {
+      color: $color-zorba;
+      outline: none;
+    }
+  }
+
+  ul {
+    margin: 0 auto 16px;
+    padding: 0 0 0 27px;
+
+    @include vp-767 {
+      padding: 0 0 0 20px;
+    }
+  }
+
+  ul li:not(:last-child) {
+    margin: 0 auto 8px;
+
+    @include vp-767 {
+      margin: 0 auto 5px;
+    }
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

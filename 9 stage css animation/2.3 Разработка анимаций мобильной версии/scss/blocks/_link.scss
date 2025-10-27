@@ -1,0 +1,62 @@
+.link {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  $root: &;
+
+  &--small {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 6px;
+    font-weight: 400;
+
+    svg {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &--icon {
+    #{$root}__icon-left {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-54px, -50%);
+    }
+
+    &:hover,
+    &:focus-visible {
+      svg {
+        transform: translate(-49px, -50%);
+      }
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    #{$root}__text::after {
+      display: block;
+    }
+  }
+
+  &__text {
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: currentColor;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: none;
+    }
+  }
+}

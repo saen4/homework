@@ -1,0 +1,160 @@
+.embankment {
+
+    margin: 0 0 120px 0;
+
+    @include vp-1023 {
+        margin: 0 0 80px 0;
+    }
+
+    @include vp-767 {
+        margin: 0 0 60px 0;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include vp-1023 {
+            grid-template-columns: repeat(2, 266px);
+            justify-content: center;
+        }
+
+        @include vp-767 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__image {
+        border-radius: 0 0 600px 600px;
+
+        @include vp-767 {
+            height: 290px;
+            width: 220px;
+        }
+
+        &--alternative {
+            @include vp-1023 {
+                display: none;
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 92px 36px 91px;
+        border-left: 1px solid $color-fallow;
+        border-top: 1px solid $color-fallow;
+        border-right: 1px solid $color-fallow;
+        border-radius: 600px 600px 0 0;
+
+        @include vp-1023 {
+            padding: 39px 13px 38px;
+        }
+
+        @include vp-767 {
+            padding: 25px 10px;
+            width: 220px;
+        }
+    }
+
+    &__icon {
+        margin: 0 0 30px 0;
+
+        @include vp-1023 {
+            height: 94px;
+            width: 70px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            height: 80px;
+            width: 60px;
+        }
+    }
+
+    &__note {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: $color-fallow;
+        margin: 0 0 10px 0;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 5px 0;
+        }
+
+        @include vp-767 {
+            font-size: 10px;
+            line-height: 14px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__title {
+        font-family: $ff-tenor;
+        margin: 0;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        margin: 0 0 40px 0;
+
+        @include vp-1023 {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__adress-link {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+
+        @include vp-1023 {
+            gap: 10px;
+        }
+
+        @include vp-767 {
+            gap: 4px;
+        }
+    }
+
+    &__adress-icon {
+        color: $color-fallow;
+
+        @include vp-1023 {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__adress-text {
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-white;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+}

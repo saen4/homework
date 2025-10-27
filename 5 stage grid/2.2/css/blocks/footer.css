@@ -1,0 +1,98 @@
+.footer {
+    font-family: "Foros", "Arial", sans-serif;
+    padding: 40px 0;
+    background-color: #23252E;
+}
+
+.footer__company {
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    margin: 0 0 16px;
+}
+
+
+.footer__location {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 280px;
+}
+
+.footer__title  {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+
+.footer__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.footer__route {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-decoration: underline;
+  color: #ffffff;  
+}
+
+.footer__contact {
+   display: flex;
+   flex-direction: column; 
+   gap: 56px;
+   align-items: flex-end;
+}
+
+.footer__contact-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.footer__contact-link--mail {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline;
+}
+
+.footer__sections-list {
+    list-style-type: none;
+    margin: 0 0 48px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__sections-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.footer__legal {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 800px;
+    margin: 0;
+    margin: 0 auto 28px;
+}
+
+.footer__link {
+    display: block;
+    text-align: center;
+}

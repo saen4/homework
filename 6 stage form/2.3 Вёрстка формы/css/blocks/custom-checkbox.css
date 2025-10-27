@@ -1,0 +1,56 @@
+.custom-checkbox__field:checked + .custom-checkbox__label .custom-checkbox__label-text::after {
+    display: block;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__label {
+    color: rgba(9, 9, 9, 0.5);
+    pointer-events: none;
+    cursor: default;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__label::after {
+    border: 1px solid rgba(173, 131, 97, 0.5);
+}
+
+.custom-checkbox__field:hover + .custom-checkbox__label {
+    color: #AD8361;
+}
+
+.custom-checkbox__field:focus-visible + .custom-checkbox__label {
+    outline: none;
+    color: #AD8361;
+}
+
+.custom-checkbox__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    color: #090909;
+    position: relative;
+    padding: 0 0 0 24px;
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+}
+
+.custom-checkbox__label::after {
+    border: 1px solid #AD8361;
+    width: 14px;
+    height: 14px;
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.custom-checkbox__label-text::after {
+    background-color: #AD8361;
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    display: none;
+}
+

@@ -1,0 +1,101 @@
+.card-news {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-news__img {
+  height: 300px;
+  width: 600px;
+}
+
+.card-news__main {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  background-color: #F2F3EE;
+}
+
+.card-news__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-news__date {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(29, 37, 45, 0.5);
+  text-align: left;
+}
+
+.card-news__title {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.card-news_discription {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.card-news__bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 40px;
+  margin: auto 0 0;
+}
+
+.card-news__views {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color:rgba(29, 37, 45, 0.5);
+}
+
+.card-news__link {
+  width: 220px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 6px 10px;
+  border-radius: 40px;
+  background-color: #D6D2C4;
+  text-align: center;
+  margin: auto 0 0;
+}
+
+
+/*модификаторы для списка*/
+
+.card-news--list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.card-news--list .card-news__img {
+  width: 570px;
+  height: 285px;
+}
+
+.card-news--list .card-news__main {
+  width: 620px;
+  height: auto;
+ 
+}
+
+.card-news__text--wrap {
+  gap: 15px;
+}

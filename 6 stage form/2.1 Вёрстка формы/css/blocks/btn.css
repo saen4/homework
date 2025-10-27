@@ -1,0 +1,24 @@
+.btn {
+  padding: 13px 27px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 20px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 50%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn--secondary {
+  background-color: #23252E;
+  border: 1px solid transparent;
+}
+
+.btn--form {
+  background-color: #3C52E6;
+  padding: 20px;
+  width: 200px;
+  line-height: 1.14;
+  color: #FFFFFF;
+}

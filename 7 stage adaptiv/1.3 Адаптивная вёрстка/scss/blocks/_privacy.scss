@@ -1,0 +1,157 @@
+.privacy {
+  padding: 80px 0 0;
+
+  @include vp-767 {
+    padding: 60px 0 0;
+  }
+
+  &--technology {
+
+    .privacy__list {
+      margin: 0 0 16px 0;
+
+      @include vp-767 {
+        margin: 0 0 12px 0;
+      }
+    }
+
+    .privacy__note {
+      @include vp-767 {
+        margin: 0 0 12px 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    column-gap: 220px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 360px 420px;
+
+    @include vp-1023 {
+      grid-template-columns: 300px 340px;
+      column-gap: 88px;
+    }
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+
+  &__heading {
+    margin: 0 0 24px;
+    font-size: 64px;
+    font-family: $ff-ardeco;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 46px;
+      line-height: 46px;
+      margin: 0 0 20px 0;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 34px;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__text,
+  &__list-item,
+  &__note {
+    font-weight: 300;
+    line-height: 22px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 16px;
+
+    @include vp-767 {
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &__note {
+    margin: 0 0 16px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__list {
+    row-gap: 4px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 32px;
+    padding: 0 0 0 16px;
+
+    @include vp-1023 {
+      margin: 0 0 28px 0;
+    }
+
+    @include vp-767 {
+      padding: 0 0 0 15px;
+      margin: 0 0 24px 0;
+    }
+  }
+
+  &__link {
+    column-gap: 12px;
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
+      column-gap: 8px;
+    }
+
+    &:hover {
+      color: $color-polo-blue;
+    }
+
+    &:focus-visible {
+      color: $color-polo-blue;
+      outline: none;
+    }
+  }
+
+  &__link-icon {
+    pointer-events: none;
+
+    @include vp-767 {
+      width: 46px;
+      height: 32px;
+    }
+  }
+}

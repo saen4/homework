@@ -1,0 +1,25 @@
+.advantages__main-list {
+  display: grid;
+  gap: 40px;
+  padding: 0;
+  margin: 0 0 100px;
+  list-style-type: none;
+}
+
+.advantages__banner-list {
+  list-style: none;
+  padding: 0 80px;
+  margin: 0 0 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.advantages__main-list--partners {
+  display: grid;
+  grid-template-columns: 600px 600px;
+}
+
+.advantages__main-list--partners .advantages__main-item--wide {
+  grid-column: span 2;
+}

@@ -1,0 +1,32 @@
+.custom-radio {
+    position: relative;
+}
+
+.custom-radio__field:checked + .custom-radio__label::before {
+    display: block;
+    border: 6px solid #1919EF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.custom-radio__label {
+ padding: 0 0 0 40px;
+}
+
+.custom-radio__label::after {
+    content: "";
+    border: 1px solid #ACB5BD;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+

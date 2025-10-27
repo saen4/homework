@@ -1,0 +1,55 @@
+.architecture-card {
+
+    width: 400px;
+
+    @include vp-767 {
+        width: 160px;
+    }
+
+
+
+    &__description {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -0.07em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-fallow;
+        display: block;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &__image {
+        border-radius: 0 0 600px 600px;
+        margin: 0 0 20px 0;
+
+        @include vp-1023 {
+            height: 410px;
+        }
+
+        @include vp-767 {
+            width: 160px;
+            height: 285px;
+            max-width: unset;
+        }
+    }
+
+    &--alternative {
+
+        .architecture-card__image {
+            border-radius: 600px 600px 0 0;
+        }
+
+    }
+}

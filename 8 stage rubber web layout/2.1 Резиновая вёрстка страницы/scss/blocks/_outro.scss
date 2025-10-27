@@ -1,0 +1,129 @@
+.outro {
+  background: url("../images/vacancy-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding: 108px 0;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../images/vacancy-bg@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  @include vp-1023 {
+    padding: 53px 0;
+  }
+
+  @include vp-767 {
+    padding: 32px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-blue-charcoa, 0.5);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__note {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 30px 0;
+    color: $color-white;
+
+    @include vp-1023 {
+      font-size: 12px;
+      line-height: 16px;
+      margin: 0 0 15px 0;
+    }
+
+    @include vp-767 {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+
+    
+    &:hover .outro__link-icon {
+      background-color: $color-blue-charcoa;
+      color: $color-white;
+    }
+
+    &:focus-visible .outro__link-icon {
+      background-color: $color-blue-charcoa;
+      color: $color-white;
+    }
+  }
+
+  &__link-title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    margin: 0 0 30px 0;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 200;
+    max-width: 400px;
+    text-align: center;
+
+    @include vp-1023 {
+      font-size: 36px;
+      line-height: 40px;
+      max-width: 300px;
+      margin: 0 0 15px 0;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 30px;
+      max-width: 200px;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__link-icon {
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    background-color: $color-white;
+    border-radius: 50%;
+
+    @include vp-1023 {
+      width: 48px;
+      height: 48px;
+
+      svg {
+        width: 18px;
+        height: 15px;
+      }
+    }
+
+    @include vp-767 {
+      width: 40px;
+      height: 40px;
+
+      svg {
+        width: 15px;
+        height: 12px;
+      }
+    }
+  }
+}

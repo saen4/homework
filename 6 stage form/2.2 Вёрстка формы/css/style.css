@@ -1,0 +1,19 @@
+/* Global */
+
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+
+/* Blocks */
+
+@import "blocks/header.css";
+@import "blocks/footer.css";
+@import "blocks/vacancy.css";
+@import "blocks/job.css";
+@import "blocks/resume.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/btn.css";
+@import "blocks/cookie.css";
+

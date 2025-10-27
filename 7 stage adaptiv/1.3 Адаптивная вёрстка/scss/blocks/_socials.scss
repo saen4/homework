@@ -1,0 +1,30 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 36px 72px;
+  max-width: 306px;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    gap: 36px 60px;
+  }
+
+  @include vp-767 {
+    gap: 32px;
+  }
+
+  &__link {
+    display: flex;
+    color: $color-white-20;
+
+    &:hover {
+      color: $color-white;
+    }
+
+    &:focus-visible {
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.btn {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: $color-mischka;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+        text-decoration: underline;
+        color: $color-blue-charcoa;
+    }
+
+    &:focus-visible {
+        color: $color-blue-charcoa;
+        outline: none;
+        text-decoration: underline;
+    }
+
+    &--active {
+        color: $color-blue-charcoa;
+        pointer-events: none;
+    }
+
+    &__icon {
+        @include vp-767 {
+            width: 20px;
+        }
+    }
+
+    &__text {
+        @include vp-767 {
+            display: none;
+        }
+    }
+}

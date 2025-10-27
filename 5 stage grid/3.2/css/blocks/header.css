@@ -1,0 +1,15 @@
+.header {
+    background: linear-gradient(90deg, #415BD2 0%, #8DA1F7 100%);
+}
+
+.header__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+}
+
+.header__link-wrapper {
+    display: flex;
+    gap: 12px;
+}

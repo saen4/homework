@@ -1,0 +1,25 @@
+.btn {
+   border: 1px solid rgba(25, 25, 239, 0.4);
+   padding: 11px;
+   width: 166px;
+   color: rgba(25, 25, 239, 0.4);
+   font-size: 14px;
+   line-height: 1.25;
+   border-radius: 60px;
+   margin: 80px auto 0;
+   display: block;
+}
+
+.btn--up {
+    border: none;
+    border-radius: 50px;
+    color: #1919EF;
+    background-color: #F6F6F6;
+    padding: 18px;
+    position: fixed;
+    right: 120px;
+    bottom: 420px;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+}

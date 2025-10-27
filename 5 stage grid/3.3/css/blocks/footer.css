@@ -1,0 +1,162 @@
+.footer {
+  background-color: #F4F6FA;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 191px auto 450px;
+  padding: 40px 0 40px;
+}
+
+.footer__connection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  margin: 0 0 40px;
+}
+
+.footer__number-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.footer__number-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer__number-note {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #6A6E80;
+}
+
+.footer__number-link {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #1E222E;
+}
+
+.footer__complaints {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__complaints-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #6A6E80;
+}
+
+.footer__complaints-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  background-color: #1E222E;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 143px;
+}
+
+.footer__central {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 60px;
+  justify-content: center;
+  padding: 20px 0 0;
+}
+
+.footer__central-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__central-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: #1E222E;
+}
+
+.footer__central-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: #1E222E;
+}
+
+.footer__info {
+  padding: 20px 0 0 50px;
+}
+
+.footer__info-list {
+  padding: 0;
+  margin: 0 0 32px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__info-link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #6A6E80;
+}
+
+.footer__legal {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #6A6E80;
+  margin: 0 0 12px;
+}
+
+.footer__date-info {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0;
+  color:rgba(106, 110, 128, 0.4);
+  margin: 0 0 20px;
+  display: block;
+}
+
+.footer__eng-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer__eng-link-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #6A6E80;
+}

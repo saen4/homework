@@ -1,0 +1,18 @@
+.custom-textarea {
+    grid-column: span 2;
+}
+
+.custom-textarea__field {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-bottom: 1px solid #CACACA;
+    font-size: 18px;
+    line-height: 1.2;
+    width: 100%;
+    min-height: 102px;
+}
+
+.custom-textarea__field::placeholder {
+    color: #9B9B9B;
+}

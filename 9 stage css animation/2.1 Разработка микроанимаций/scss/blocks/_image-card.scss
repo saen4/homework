@@ -1,0 +1,30 @@
+.image-card {
+  $root: &;
+
+  color: $color-black;
+  display: flex;
+  flex-direction: column;
+
+  &:hover,
+  &:focus-visible {
+    #{$root}__img {
+      filter: grayscale(0);
+    }
+  }
+
+  &__img {
+    margin: 0 0 20px 0;
+    height: 585px;
+    width: 672px;
+    filter: grayscale(1);
+    transition: filter $transition-300;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 500;
+    margin: 0;
+    color: $color-black;
+  }
+}

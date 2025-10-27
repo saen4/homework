@@ -1,0 +1,90 @@
+.bubble {
+ padding: 32px 40px;
+ background-color: #243961;
+ border-radius: 40px;
+ width: 334px;
+ position: relative;
+ z-index: 20;
+}
+
+.bubble--purple {
+    width: 297px;
+    background-color: #61235F;
+    color: #61235F;
+}
+
+.bubble--green {
+    width: 283px;
+    background-color: #315C51;
+    color: #315C51;
+}
+
+.bubble--red {
+    width: 363px;
+    background-color: #6A2844;
+    color: #6A2844;
+}
+
+.bubble--red .bubble__tail {
+    position: absolute;
+    top: 72px;
+    left: -17px; 
+}
+
+.bubble--dark-purple {
+    width: 423px;
+    background-color: #432858;
+}
+
+.bubble--brown {
+    width: 303px;
+    background-color: #62432C;
+    color: #62432C;
+}
+
+.bubble--brown .bubble__tail {
+    transform: scale(-1,1);
+    top: 120px;
+    left: 288px;
+}
+
+.bubble--olive {
+    width: 363px;
+    background-color: #676A47;
+    color: #676A47;
+}
+
+.bubble--olive .bubble__tail {
+    transform: scale(-1,1);
+    top: 96px;
+    left: 347px;
+}
+
+.bubble__text {
+   font-size: 18px;
+   line-height: 24px; 
+   color: rgba(255, 255, 255, 0.7);
+   margin: 0;
+}
+
+.bubble__tail {
+    position: absolute;
+    top: 96px;
+    left: -17px;
+
+}
+
+
+.reviews__image-demon {
+    z-index: 10;
+    position: absolute;
+    top: -43px;
+    left: -110px;
+}
+
+.reviews__image-angry {
+    z-index: 10;
+    position: absolute;
+    top: -43px;
+    right: -114px;
+}

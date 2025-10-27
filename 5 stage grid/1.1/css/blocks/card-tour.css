@@ -1,0 +1,132 @@
+.card-tour {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 24px;
+  background-color: #ffffff;
+  overflow: hidden;
+  min-width: 358px;
+}
+
+.card-tour__img {
+  height: 240px;
+  width: 100%;
+}
+
+.card-tour__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 30px;
+  height: 100%;
+}
+
+.card-tour__content-top {
+  display: flex;
+  gap: 9px;
+  margin: 0 0 10px;
+  justify-content: space-between;
+}
+
+.card-tour__title {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #9e5fc4;
+  font-weight: 700;
+
+}
+
+.card-tour__country {
+  color: #242424;
+  font-weight: 400;
+}
+
+.card-tour__label-info  {
+  display: flex;
+  gap: 5px;
+}
+
+.card-tour__weather {
+  border-radius: 60px;
+  background-color: #f9efcd;
+  display: flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-tour__visa {
+  border-radius: 60px;
+  background-color: #F2E5FA;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-tour__label-info svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.card-tour__label-text {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.card-tour__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 16px;
+}
+
+.card-tour__content-bottom {
+  margin: auto 0 0 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards-tour__card--size-l .card-tour__content-bottom {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-tour__price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-tour__price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-tour__price svg {
+  width: 22px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.card-tour__price-text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.card-tour__btns-wrap {
+  display: flex;
+  gap: 17px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cards-tour__card--size-l .card-tour__btns-wrap {
+  justify-content: space-between;
+}

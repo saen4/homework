@@ -1,0 +1,24 @@
+.news-wrapper {
+list-style: none;
+display: flex;
+gap: 30px;
+padding: 0;
+margin: 0;
+gap: 30px;
+}
+
+.news-wrapper__card {
+    width: 50%;
+}
+
+/*модификаторы для списка*/
+
+.news-wrapper--list {
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+
+.news-wrapper--list .news-wrapper__card {
+    width: 100%;
+}

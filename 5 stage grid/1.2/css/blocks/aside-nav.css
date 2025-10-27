@@ -1,0 +1,50 @@
+.aside-nav {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 25px 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-nav__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.aside-nav__country-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside-nav__country-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #242424;
+}
+
+.aside-nav__country-link-all .aside-nav__country-text {
+    font-weight: 700;
+    color: #9E5FC4;
+}
+
+.aside-nav__choose-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #ffffff;
+    background-color: #9E5FC4;
+    width: 165px;
+    padding: 14px;
+    border-radius: 60px;
+    text-align: center;
+    display: block;
+}

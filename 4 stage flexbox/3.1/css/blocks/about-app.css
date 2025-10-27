@@ -1,0 +1,52 @@
+.about-app {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-app__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 620px;
+}
+
+.about-app__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1e222e;
+    margin: 0;
+}
+
+.about-app__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1e222e;
+    margin: 0;
+}
+
+.about-app__links {
+    display: flex;
+    gap: 12px;
+    margin: 32px 0 0;
+}
+
+.about-app__link {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+   color: #1E222E;
+   background-color: #EDEEEF;
+   text-decoration: none;
+   padding: 14px 45px 14px 46px;
+   border-radius: 8px;
+   margin: 0;
+}
+
+.about-app__link--secondary {
+    color: #ffffff;
+    background-color: #1E222E;
+    padding: 14px 56px 14px 57px;
+}

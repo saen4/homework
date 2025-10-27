@@ -1,0 +1,100 @@
+.main-content {
+    display: flex;
+    gap: 40px;
+}
+
+.main-content__left {
+    padding: 40px 0 0;
+}
+
+.main-content__gallery {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 160px 190px 160px 160px;
+    grid-template-rows: 220px 200px 160px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content__image--wide {
+    grid-column: span 2;
+}
+
+.main-content__image--vertical {
+    grid-row: span 2;
+}
+
+.main-content__right {
+    padding: 40px 0 0;
+    width: 540px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 1px solid #053947;
+}
+
+.main-content__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-content__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.main-content__link-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.main-content__link--back .main-content__link-text {
+    color: #B68E6C;
+    text-align: right;
+}
+
+.main-content__link--forward .main-content__link-text {
+    color: #B68E6C;
+}
+
+.main-content__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    margin: 0;
+    font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+}
+
+.main-content__progress {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 340px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content__stage {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.main-content__link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 340px;
+    margin: auto 0 0;
+}

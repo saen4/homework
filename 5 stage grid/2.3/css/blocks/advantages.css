@@ -1,0 +1,58 @@
+.advantages {
+    margin: 0 0 80px;
+}
+
+.advantages__title-wrapper {
+    margin: 0 0 80px; 
+}
+
+.advantages__title-note {
+    font-family: "Ardeco", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 140px;
+    letter-spacing: -0.02em;
+    color: #204186;
+    display: block;
+    margin: 0 0 16px;
+}
+
+.advantages__title {
+    font-family: "Ardeco", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 50px;
+    letter-spacing: 0;
+    color: #204186;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.advantages__card-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages__card-image {
+    border: 2px solid #FFFFFF;
+    border-radius: 180px 180px 0 0;
+}
+
+.advantages__card-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.advantages__card-item {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}

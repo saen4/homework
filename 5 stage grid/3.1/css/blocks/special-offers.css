@@ -1,0 +1,12 @@
+.special-offers {
+    margin: 0 0 100px;
+}
+
+.special-offers__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0;
+    color:#1E222E;
+    margin: 0 0 40px;
+}

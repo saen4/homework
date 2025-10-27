@@ -1,0 +1,17 @@
+.btn {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #ffffff;
+  padding: 13px 27px;
+  border: 1px solid rgba(255, 255, 255, 50%);
+  font-size: 14px;
+  line-height: 20px;
+  background-color: transparent;
+}
+
+.btn-dark {
+  border: none;
+  background-color: #23252E;
+  text-align: center;
+  min-width: 219px;
+  padding: 14px 28px;
+}

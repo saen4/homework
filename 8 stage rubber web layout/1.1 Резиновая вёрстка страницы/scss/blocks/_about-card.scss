@@ -1,0 +1,169 @@
+.about-card {
+  position: relative;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 0 28px;
+  border-radius: 16px;
+  background-color: $color-white;
+  box-shadow: 0 6px 20px 0 $color-gulf-blue-2;
+
+  &:hover {
+    background-color: $color-solitude-1;
+  }
+
+  &:focus-visible {
+    background-color: $color-solitude-1;
+    outline: none;
+  }
+
+  @include vp-1024 {
+    padding: 28px 32px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    min-height: 240px;
+  }
+
+  @include vp-1304 {
+    padding: 32px 40px 32px 32px;
+    min-height: 300px;
+  }
+
+  &--large {
+    padding: 20px;
+    min-height: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $color-solitude-2;
+    box-shadow: none;
+
+    @include vp-768 {
+      padding: 28px;
+    }
+
+    @include vp-1024 {
+      padding: 32px;
+      min-height: 352px;
+    }
+
+    .about-card__title {
+      margin: 0;
+      max-width: 150px;
+      font-size: 18px;
+      line-height: 22px;
+
+      @include vp-768 {
+        max-width: 200px;
+      }
+
+      @include vp-1024 {
+        max-width: 430px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    color: $color-black-russian;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include vp-1024 {
+      font-size: 22px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &__image-small {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+
+    @include vp-768 {
+      right: 20px;
+      bottom: 82px;
+    }
+
+    @include vp-1024 {
+      width: 120px;
+      bottom: 132px;
+    }
+
+    @include vp-1304 {
+      right: 20px;
+      bottom: 40px;
+    }
+  }
+
+  &__image-large {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+
+    @include vp-768 {
+      right: 110px;
+      bottom: 22px;
+    }
+
+    @include vp-1024 {
+      width: 240px;
+      right: 150px;
+      bottom: 32px;
+    }
+
+    @include vp-1304 {
+      right: 60px;
+      bottom: 20px;
+    }
+  }
+
+  &__link {
+    display: none;
+
+    @include vp-1024 {
+      width: 48px;
+      height: 48px;
+      background-color: $color-solitude-4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      position: absolute;
+      left: 32px;
+      bottom: 32px;
+    }
+
+    &:hover {
+      background-color: $color-link-water;
+    }
+
+    &:focus-visible {
+      background-color: $color-link-water;
+      outline: none;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    display: none;
+
+    @include vp-1024 {
+      display: block;
+    }
+  }
+}

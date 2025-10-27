@@ -1,0 +1,92 @@
+.cookie {
+
+    box-shadow: 0px 6px 20px 0px rgba(50, 54, 65, 0.2);
+    width: 330px;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 1;
+    border-radius: 12px;
+    background-color: $color-white;
+
+    @include vp-768 {
+        width: 380px;
+    }
+
+    &__wrapper {
+        position: relative;
+        padding: 12px;
+    }
+
+
+    &__text {
+        color: $color-black-russian;
+        font-size: 10px;
+        line-height: 12px;
+        padding: 0 16px 0 0;
+        margin: 0;
+        border-right: 1px solid $color-hawkes-blue;
+        max-width: 266px;
+
+        @include vp-768 {
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 300px;
+        }
+
+        @include vp-1304 {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    &__link {
+        color: $color-royal-blue-1;
+        font-size: 10px;
+        line-height: 12px;
+
+    }
+
+    &__close {
+        border: none;
+        background-color: transparent;
+        padding: 0px;
+        width: 20px;
+        height: 20px;
+        color: $color-mischka;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include vp-768 {
+            right: 29px;
+        }
+
+        svg {
+            @include vp-768 {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__accept {
+        background-color: $color-black-russian;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 50px;
+        color: $color-white;
+        position: absolute;
+        top: -62px;
+        right: 0;
+
+        @include vp-768 {
+            top: -71px;
+            right: 5px;
+        }
+    }
+
+
+}

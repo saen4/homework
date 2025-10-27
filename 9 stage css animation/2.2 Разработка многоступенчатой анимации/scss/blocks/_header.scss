@@ -1,0 +1,50 @@
+.header {
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  $root: &;
+
+  &--open {
+    #{$root}__user-link {
+      color: $color-black;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    margin: 0 164px 0 0;
+
+    svg {
+      height: 22px;
+      width: 146px;
+    }
+  }
+
+  &__burger {
+    margin: 0 28px 0 0;
+  }
+
+  &__page-name {
+    margin: 0 20px 0 0;
+    color: $color-black;
+  }
+
+  &__user-list {
+    margin: 0 0 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+
+  &__user-link {
+    color: $color-white;
+  }
+}

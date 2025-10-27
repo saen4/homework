@@ -1,0 +1,87 @@
+.card-advice {
+    min-height: 480px;
+    padding: 20px 20px 32px;
+    background: url("../../images/background-card/card-advice.png") no-repeat #8b9bd4;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-advice__head {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-advice__intro {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.card-advice__bot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-advice__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 0;    
+}
+
+.card-advice__link {
+    background-color: #476BF0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 14px;
+    width: 246px;
+    border-radius: 8px;
+}
+
+/* Модификаторы*/
+
+.card-advice--rating {
+    background: url("../../images/background-card/rating.png") no-repeat #8b9bd4; 
+    background-size: cover;
+}
+
+.card-advice--ingots {
+    background: url("../../images/background-card/ingots.png") no-repeat #8b9bd4; 
+    background-size: cover;
+}
+
+.card-advice--benefits {
+    background: url("../../images/background-card/benefits.png") no-repeat #8b9bd4; 
+    background-size: cover;
+}
+
+.card-advice--sbp {
+    background: url("../../images/background-card/sbp.png") no-repeat #8b9bd4; 
+    background-size: cover;
+}
+
+.card-advice--dismissal {
+    background: url("../../images/background-card/dismissal.png") no-repeat #8b9bd4; 
+    background-size: cover;
+}
+
+.card-advice--balance {
+    background: url("../../images/background-card/balance.png") no-repeat #8b9bd4; 
+    background-size: cover;
+}
+
+.card-advice--credit {
+    background: url("../../images/background-card/credit.png") no-repeat #8b9bd4; 
+    background-size: cover;
+}

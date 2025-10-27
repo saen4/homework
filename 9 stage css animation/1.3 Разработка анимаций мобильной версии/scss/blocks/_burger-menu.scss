@@ -1,0 +1,36 @@
+.burger-menu {
+    background: linear-gradient(171.29deg, $color-blue 0%, $color-blue-2 100%);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 100px 30px 28px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $transition-300;
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        transform: translateX(-30px);
+        opacity: 0;
+        transition: opacity $transition-300 0.3s, transform $transition-300;
+    }
+
+    &__link {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+}

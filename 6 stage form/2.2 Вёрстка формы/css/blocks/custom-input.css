@@ -1,0 +1,81 @@
+.custom-input {
+    width: 540px;
+    position: relative;
+}
+
+.custom-input__field {
+    width: 100%;
+    border: 1px solid #D6D2C4;
+    padding: 17px 60px 17px 20px;
+    color: #1D252D;
+    font-size: 300px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.custom-input--error .custom-input__field {
+    border: 1px solid #E80E0A;
+}
+
+.custom-input__field:hover {
+    border: 1px solid #1D252D;
+}
+
+.custom-input__field:focus-visible {
+    border: 1px solid #1D252D;
+    outline: none;
+}
+
+.custom-input__field:disabled {
+    border: 1px solid #E9E9E9;
+    background-color: #FAFAFA;
+}
+
+.custom-input__label {
+    font-size: 300px;
+    color: #1D252D;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    background-color: #ffffff;
+    padding: 0 8px;
+    user-select: none;
+}
+
+.custom-input__field:disabled ~ .custom-input__label {
+    color: rgba(29, 37, 45, 0.5);
+}
+
+.custom-input__icon {
+    color: #D6D2C4;
+    position: absolute;
+    right: 22px;
+    top: 13px;
+    pointer-events: none;
+
+}
+
+.custom-input__field:hover ~ .custom-input__icon {
+    color: #1D252D;
+}
+
+.custom-input__field:focus-visible ~ .custom-input__icon {
+    color: #1D252D;
+}
+
+.custom-input__field:disabled ~ .custom-input__icon {
+    color: #D6D2C4;
+}
+
+.custom-input--error .custom-input__icon {
+    color: #E80E0A;
+}
+
+.custom-input__error-text {
+    font-weight: 300;
+    color: #E80E0A;
+    font-size: 12px;
+    line-height: 14px;
+}

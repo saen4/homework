@@ -1,0 +1,208 @@
+.loader {
+    background-color: $color-black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    animation: loaderFade 21s linear forwards;
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(2.5);
+        filter: blur(10px);
+        opacity: 0;
+        animation: logoFlyInCenter 6s cubic-bezier(0.07, 0.51, 0.26, 0.77) forwards;
+
+        &--1 {
+            left: 90%;
+            top: 15%;
+            animation-delay: 3.9s;
+        }
+
+        &--2 {
+            left: 35%;
+            top: 0%;
+            animation-delay: 6.4s;
+        }
+
+        &--3 {
+            left: 7%;
+            top: 0%;
+            animation-delay: 4.7s;
+        }
+
+        &--4 {
+            left: 100%;
+            top: 15%;
+            animation-delay: 0.9s;
+        }
+
+        &--5 {
+            left: 0%;
+            top: 50%;
+            animation-delay: 1.6s;
+        }
+
+        &--6 {
+            left: 50%;
+            top: 0;
+            animation-delay: 8s;
+        }
+
+        &--7 {
+            left: 100%;
+            top: 55%;
+            animation-delay: 8.3s;
+        }
+
+        &--8 {
+            left: 60%;
+            top: 100%;
+            animation-delay: 5.5s;
+        }
+
+        &--9 {
+            left: 32%;
+            top: 100%;
+            animation-delay: 2.2s;
+        }
+
+        &--10 {
+            left: 0%;
+            top: 97%;
+            animation-delay: 7.2s;
+        }
+
+        &--11 {
+            left: 90%;
+            top: 90%;
+            animation-delay: 3s;
+        }
+
+        &--12 {
+            left: 75%;
+            top: 100%;
+            animation-delay: 9s;
+        }
+
+        &--wm {
+            transform: translate(-50%, -50%) scale(5.2);
+            filter: blur(10px);
+            animation: wmLogoFade 2.5s ease-in forwards 13s,
+                wmLogoFlash 2.5s linear forwards 16.5s;
+        }
+    }
+
+    &__line {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-charcoal;
+        width: 280px;
+        height: 2px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $color-white;
+            width: 280px;
+            height: 2px;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            animation: lineSlideInRight 21s linear forwards;
+        }
+    }
+}
+
+@keyframes logoFlyInCenter {
+    10% {
+        opacity: 1;
+    }
+
+    15% {
+        filter: blur(0);
+    }
+
+    70% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        filter: blur(5px);
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+}
+
+@keyframes wmLogoFade {
+    0% {
+        transform: translate(-50%, -50%) scale(7.5);
+        filter: blur(10px);
+    }
+
+    40% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes wmLogoFlash {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes lineSlideInRight {
+    0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+    }
+
+    100% {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+@keyframes loaderFade {
+    0% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

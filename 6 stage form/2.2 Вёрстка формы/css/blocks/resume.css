@@ -1,0 +1,39 @@
+.resume__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 58px;
+
+}
+
+.resume__title {
+   font-weight: 200;
+   color: #1D252D;
+   font-size: 48px;
+   line-height: 56px;
+   text-transform: uppercase;
+   margin: 0;
+}
+
+.resume__note {
+   color: #1D252D;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 20px; 
+   text-align: right;
+   width: 280px;
+}
+
+.resume__form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px 40px;
+    margin: 0 0 48px;
+}
+
+.resume__form-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}

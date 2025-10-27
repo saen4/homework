@@ -1,0 +1,85 @@
+header {
+    background: linear-gradient(180deg, #6E48DB 0%, #9E5FC4 100%);
+    padding: 15px 0;
+}
+
+.header__top {
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    padding: 0 0 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 0 0 15px;
+}
+
+.header__company {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__about {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.header__safety {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.header__gallery {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.header__users {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.header__location {
+    display: flex;
+    align-items: center;
+}
+
+.header__location-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.header__users-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__city-selection {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.header__burger-menu {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}

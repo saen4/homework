@@ -1,0 +1,51 @@
+.payment-button {
+    margin: 0 0 100px;
+}
+
+.payment-button__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #1E222E;
+    margin: 0 auto 40px;
+    width: 520px;
+}
+
+.payment-button__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 286px);
+    gap: 32px;
+}
+
+.payment-button__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-button__image {
+    background-color: #F6F6F6;
+    margin: 0 0 20px;
+}
+
+.payment-button__caption {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #1E222E;
+    margin: 0 0 8px;
+}
+
+.payment-button__note {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #696E82;
+}
+    

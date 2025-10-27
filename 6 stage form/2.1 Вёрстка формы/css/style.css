@@ -1,0 +1,20 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/header.css";
+@import "blocks/btn.css";
+@import "blocks/retail.css";
+@import "blocks/footer.css";
+@import "blocks/socials.css";
+@import "blocks/modal.css";
+@import "blocks/user-date.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-textarea.css";
+@import "blocks/custom-checkbox.css";
+

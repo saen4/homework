@@ -1,0 +1,99 @@
+.footer {
+  font-family: "Foros", "Arial", sans-serif;
+  padding: 40px 0 28px;
+  background-color: #23252E;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 48px;
+}
+
+.footer__content-box {
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  width: 100%;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__text {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 40%);
+}
+
+.footer__address {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.footer__link {
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.footer__middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.footer__logo-link {
+  display: flex;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 56px;
+}
+
+.footer__phone-link {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 56px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__nav-link {
+  display: flex;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer__copyright-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 28px;
+}
+
+.footer__copyright-text {
+  margin: 0;
+  max-width: 800px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 40%);
+}

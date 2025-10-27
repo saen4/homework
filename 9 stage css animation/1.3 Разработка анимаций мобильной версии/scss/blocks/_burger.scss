@@ -1,0 +1,30 @@
+.burger {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+  $root: &;
+
+  &__line {
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    background-color: $color-black;
+    transition: top 0.3s ease-in 0.3s, transform 0.3s ease-in;
+
+    &--top {
+      top: 9px;
+    }
+
+    &--bottom {
+      top: 19px;
+    }
+  }
+}

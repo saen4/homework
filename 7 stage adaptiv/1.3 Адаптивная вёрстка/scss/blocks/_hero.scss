@@ -1,0 +1,169 @@
+.hero {
+  padding: 48px 0 0;
+
+  @include vp-1023 {
+    padding: 40px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 22px 0 0;
+  }
+
+  &--silence {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hero__image {
+      margin: 0 0 80px 0;
+
+      @include vp-1023 {
+        height: 400px;
+      }
+
+      @include vp-767 {
+        height: 200px;
+        margin: 0 0 60px 0;
+      }
+    }
+
+    .hero__heading {
+      text-align: left;
+
+      @include vp-767 {
+        text-align: center;
+      }
+    }
+
+    .hero__wrapper {
+      margin: 0 0 48px 0;
+
+      @include vp-1023 {
+        display: grid;
+        grid-template-columns: 340px 1fr;
+        column-gap: 48px;
+        margin: 0 0 40px 0;
+      }
+
+      @include vp-767 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 0 32px 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 236px;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 70px;
+    font-family: $ff-ardeco;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 44px;
+      line-height: 40px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+  }
+
+  &__img-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, $color-cerulean-blue-0 0%, $color-cerulean-blue-60 46.28%, $color-cerulean-blue 89%);
+
+    @include vp-1023 {
+      height: 100px;
+    }
+
+    @include vp-767 {
+      height: 50px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin: 48px 0 0;
+
+    @include vp-1023 {
+      margin: 40px 0 0;
+    }
+
+    @include vp-767 {
+      margin: 32px 0 0;
+    }
+  }
+
+  &__icon {
+
+    margin: 0 0 32px 0;
+
+    @include vp-1023 {
+      width: 50px;
+      height: 8px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 24px 0;
+    }
+  }
+
+  &__note {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-white;
+    width: 620px;
+    text-align: center;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      width: 345px;
+      text-align: center;
+    }
+  }
+}

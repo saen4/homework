@@ -1,0 +1,157 @@
+.governing {
+  margin: 0 0 100px;
+
+  @include vp-1023 {
+    margin: 0 0 60px 0;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    margin: 0 0 75px;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 36px;
+      line-height: 40px;
+      margin: 0 0 49px 0;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 30px;
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 40px;
+    padding: 0;
+    margin: 0 0 100px;
+    list-style: none;
+
+    @include vp-1023 {
+      gap: 30px 16px;
+      margin: 0 0 60px 0;
+    }
+
+    @include vp-767 {
+      grid-template-columns: repeat(2, 2fr);
+      grid-auto-flow: dense;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    &--wide {
+      @include vp-767 {
+        grid-column: span 2;
+      }
+
+    }
+  }
+
+  &__text-card {
+    background-color: $color-grey;
+    padding: 40px;
+    border-radius: 20px;
+    height: 580px;
+
+    @include vp-1023 {
+      padding: 20px 20px 39px;
+      height: 340px;
+    }
+
+    @include vp-767 {
+      padding: 20px;
+      height: 280px;
+    }
+  }
+
+  &__text-inner {
+    @include vp-767 {
+      display: flex;
+      gap: 17px;
+      border-bottom: 1px solid $color-iron;
+      padding: 0 0 20px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__text-title {
+    font-size: 110px;
+    line-height: 100px;
+    letter-spacing: -0.06em;
+    font-weight: 300;
+    margin: 0 0 15px;
+
+    @include vp-1023 {
+      font-size: 70px;
+      line-height: 60px;
+    }
+
+    @include vp-767 {
+      margin: 0;
+    }
+  }
+
+  &__text-achievement {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid $color-iron;
+
+    @include vp-1023 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+      border-bottom: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__text-description {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+
+    @media (max-width: 1239px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-1023 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__slogan {
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+
+    @include vp-1023 {
+      max-width: 440px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

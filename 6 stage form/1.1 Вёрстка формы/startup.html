@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Стартапам - Газпромбанк.тех</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo-link" href="#" aria-label="Вернуться на главную страницу">
+          <svg class="header__logo-image" width="354" height="19" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo-gazprombank-tex"></use>
+          </svg>
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Вакансии
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                События
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--active" href="#">
+                Стартапам
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                Digital start
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__social-link" href="#" aria-label="Перейти в группу Вконтакте">
+          <svg class="header__social-image" width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-vkontakte"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="request">
+      <h1 class="visually-hidden">Форма отправки заявки для участия в программе</h1>
+      <div class="container">
+        <div class="request__wrapper">
+          <a class="request__back-link" href="#">
+            <svg class="request__back-image" width="46" height="14" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-left-arrow-next"></use>
+            </svg>
+            <span class="request__back-text">Назад</span>
+          </a>
+          <h2 class="request__heading">
+            Заполни заявку для участия в&nbsp;программе
+          </h2>
+          <p class="request__description">
+            Расскажи о&nbsp;своем проекте. Если он&nbsp;нам подходит, мы&nbsp;свяжемся с&nbsp;тобой для обсуждения
+            дальнейшей работы
+          </p>
+          <!-- Форма -->
+          <!-- Расскажи о себе -->
+          <form class="application-form" action="#" method="get">
+            <fieldset class="application-form__group">
+              <legend class="application-form__group-name">Расскажи о себе</legend>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="user-last-name" id="user-last-name"
+                  placeholder="Фамилия*" aria-label="Фамилия" required>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="email" name="user-email" id="user-email" placeholder="E-mail"
+                  aria-label="Электронная почта" required>
+                <label class="custom-input__label" for="user-email">Почта*</label>
+                <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-user-mail"></use>
+                </svg>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="user-name" placeholder="Имя*" aria-label="Имя"
+                  required>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="user-bd" placeholder="dd/mm/yyyy"
+                  aria-label="Дата рождения" required id="user-bd">
+                <label class="custom-input__label" for="user-bd">Дата рождения*</label>
+                <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-user-bd"></use>
+                </svg>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="surname" placeholder="Отчество"
+                  aria-label="Отчество">
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="tel" name="user-surname" id="user-surname"
+                  placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" aria-label="Номер телефона" required>
+                <label class="custom-input__label" for="user-surname">Телефон*</label>
+                <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-user-phone"></use>
+                </svg>
+              </div>
+            </fieldset>
+            <!-- Расскажи о компании -->
+            <fieldset class="application-form__group">
+              <legend class="application-form__group-name">Расскажи о компании</legend>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="user-company-name" placeholder="Название компании*"
+                  aria-label="Название компании" required>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="user-company-site" placeholder="Сайт компании*"
+                  aria-label="Сайт компании" required>
+              </div>
+              <div class="custom-textarea">
+                <textarea class="custom-textarea__field" name="user-company-description"
+                  placeholder="Описание компании*"></textarea>
+              </div>
+            </fieldset>
+            <!-- Добавь ссылку на презентацию проекта -->
+            <fieldset class="application-form__group">
+              <legend class="application-form__group-name">Добавь ссылку на презентацию проекта</legend>
+              <div class="custom-input custom-input--wide">
+                <input class="custom-input__field" type="text" name="user-project-link" placeholder="Ссылка*"
+                  aria-label="Ссылка на презентацию проекта" required>
+                <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-user-link"></use>
+                </svg>
+              </div>
+            </fieldset>
+            <!-- Укажи направление работы твоего стартапа или проекта -->
+            <fieldset class="application-form__group">
+              <legend class="application-form__group-name">
+                <svg class="application-form__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-user-info"></use>
+                </svg>
+                Укажи направление работы твоего стартапа или проекта
+              </legend>
+              <div class="application-form__inner-checkbox">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="services-for-branches"
+                    name="services-for-branches">
+                  <label class="custom-checkbox__label" for="services-for-branches">
+                    <span class="custom-checkbox__heading">Сервисы для отделений</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox"
+                    id="electronic-document-management" name="electronic-document-management">
+                  <label class="custom-checkbox__label" for="electronic-document-management">
+                    <span class="custom-checkbox__heading">Электронныйдокументооборот</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="speech-technologies"
+                    name="speech-technologies">
+                  <label class="custom-checkbox__label" for="speech-technologies">
+                    <span class="custom-checkbox__heading">Речевые технологии</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox"
+                    id="customer-interaction-channels" name="customer-interaction-channels">
+                  <label class="custom-checkbox__label" for="customer-interaction-channels">
+                    <span class="custom-checkbox__heading">Каналы взаимодействия с клиентами</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox"
+                    id="identification-and-biometrics" name="identification-and-biometrics">
+                  <label class="custom-checkbox__label" for="identification-and-biometrics">
+                    <span class="custom-checkbox__heading">Идентификация и биометрия</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="services-for-investments"
+                    name="services-for-investments">
+                  <label class="custom-checkbox__label" for="services-for-investments">
+                    <span class="custom-checkbox__heading">Сервисы для инвестиций и&nbsp;работы
+                      с&nbsp;инвест.портфелем</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="loyalty-enhancing-services"
+                    name="loyalty-enhancing-services">
+                  <label class="custom-checkbox__label" for="loyalty-enhancing-services">
+                    <span class="custom-checkbox__heading">Сервисы повышения лояльности и&nbsp;оптимизации клиентского
+                      пути</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="mortgage" name="mortgage">
+                  <label class="custom-checkbox__label" for="mortgage">
+                    <span class="custom-checkbox__heading">Ипотека</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="antifraud-and-cybersecurity"
+                    name="antifraud-and-cybersecurity">
+                  <label class="custom-checkbox__label" for="antifraud-and-cybersecurity">
+                    <span class="custom-checkbox__heading">Антифрод и кибербезопасность</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="scoring-and-underwriting"
+                    name="scoring-and-underwriting">
+                  <label class="custom-checkbox__label" for="scoring-and-underwriting">
+                    <span class="custom-checkbox__heading">Скоринг и андеррайтинг</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="hrtech" name="hrtech">
+                  <label class="custom-checkbox__label" for="hrtech">
+                    <span class="custom-checkbox__heading">HrTech</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="edtech" name="edtech">
+                  <label class="custom-checkbox__label" for="edtech">
+                    <span class="custom-checkbox__heading">EdTech</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="lending" name="lending">
+                  <label class="custom-checkbox__label" for="lending">
+                    <span class="custom-checkbox__heading">Кредитование</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="car-loans" name="car-loans">
+                  <label class="custom-checkbox__label" for="car-loans">
+                    <span class="custom-checkbox__heading">Автокредитование</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="insurance" name="insurance">
+                  <label class="custom-checkbox__label" for="insurance">
+                    <span class="custom-checkbox__heading">Страхование</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="enriching-customer-data"
+                    name="enriching-customer-data">
+                  <label class="custom-checkbox__label" for="enriching-customer-data">
+                    <span class="custom-checkbox__heading">Обогащение данных о клиентах</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="crm" name="crm">
+                  <label class="custom-checkbox__label" for="crm">
+                    <span class="custom-checkbox__heading">CRM</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="services-for-business"
+                    name="services-for-business">
+                  <label class="custom-checkbox__label" for="services-for-business">
+                    <span class="custom-checkbox__heading">Сервисы для малого и среднего бизнеса</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="pfm" name="pfm">
+                  <label class="custom-checkbox__label" for="pfm">
+                    <span class="custom-checkbox__heading">PFM</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="legal-service"
+                    name="legal-service">
+                  <label class="custom-checkbox__label" for="legal-service">
+                    <span class="custom-checkbox__heading">Юридический сервис</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="neobanking"
+                    name="neobanking">
+                  <label class="custom-checkbox__label" for="neobanking">
+                    <span class="custom-checkbox__heading">Необанкинг</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="digital-marketing"
+                    name="digital-marketing">
+                  <label class="custom-checkbox__label" for="digital-marketing">
+                    <span class="custom-checkbox__heading">Digital Marketing</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="customer-churn"
+                    name="customer-churn">
+                  <label class="custom-checkbox__label" for="customer-churn">
+                    <span class="custom-checkbox__heading">Сервисы по работе с оттоком клиентов</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="attracting-new-clients"
+                    name="attracting-new-clients">
+                  <label class="custom-checkbox__label" for="attracting-new-clients">
+                    <span class="custom-checkbox__heading">Привлечение новых клиентов</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="helpdesk" name="helpdesk">
+                  <label class="custom-checkbox__label" for="helpdesk">
+                    <span class="custom-checkbox__heading">Helpdesk</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="corporate-training"
+                    name="corporate-training">
+                  <label class="custom-checkbox__label" for="corporate-training">
+                    к<span class="custom-checkbox__heading">орпоративное обучение</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="hiring" name="hiring">
+                  <label class="custom-checkbox__label" for="hiring">
+                    <span class="custom-checkbox__heading">Найм</span>
+                    <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <!-- Работал(а) ли ты раньше с Газпромбанком? -->
+            <fieldset class="application-form__group">
+              <legend class="application-form__group-name">Работал(а) ли ты раньше с Газпромбанком?</legend>
+              <div class="application-form__group-inner">
+                <div class="application-form__inner-radio">
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="work-yes" name="work-at-gazprom"
+                      value="yes">
+                    <label class="custom-radio__label" for="work-yes">
+                      <span class="custom-radio__text">Да</span>
+                    </label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="work-no" name="work-at-gazprom"
+                      value="no">
+                    <label class="custom-radio__label" for="work-no">
+                      <span class="custom-radio__text">Нет</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="name-employee" placeholder="ФИО сотрудника"
+                    aria-label="ФИО сотрудника">
+                </div>
+              </div>
+            </fieldset>
+            <!-- Откуда узнал(а) о нас? -->
+            <fieldset class="application-form__group">
+              <legend class="application-form__group-name">Откуда узнал(а) о нас?</legend>
+              <div class="application-form__group-inner">
+                <div class="application-form__inner-radio">
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="event" name="where know"
+                      value="event">
+                    <label class="custom-radio__label" for="event">
+                      <span class="custom-radio__text">Мероприятие</span>
+                    </label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="employee" name="where know"
+                      value="employee">
+                    <label class="custom-radio__label" for="employee">
+                      <span class="custom-radio__text">Сотрудник</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="name-employee" placeholder="ФИО сотрудника"
+                    aria-label="ФИО сотрудника" value="Иванов Иван">
+                </div>
+              </div>
+            </fieldset>
+            <!-- Сообщение -->
+            <fieldset class="application-form__group">
+              <div class="custom-textarea">
+                <textarea class="custom-textarea__field" name="user-comment" placeholder="Сообщение"></textarea>
+              </div>
+            </fieldset>
+            <!-- Даю согласие на обработку персональных данных -->
+            <div class="custom-checkbox custom-checkbox--personal-data">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="personal-data"
+                name="personal-data">
+              <label class="custom-checkbox__label" for="personal-data">
+                <span class="custom-checkbox__heading">Даю согласие на
+                  <a class="custom-checkbox__link" href="#">обработку персональных данных</a>
+                </span>
+                <svg class="custom-checkbox__tick" width="10" height="10" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-checkbox-tick"></use>
+                </svg>
+              </label>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <button class="btn btn--up">
+        <svg class="btn__icon" width="24" height="24" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+        </svg>
+      </button>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__box">
+          <a class="footer__logo-link" href="#" aria-label="Вернуться на главную страницу">
+            <svg class="footer__logo-image" width="354" height="19" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo-gazprombank-tex" />
+            </svg>
+          </a>
+          <p class="footer__copyright">
+            &copy;&nbsp;1990-2024, Банк ГПБ (АО) Генеральная лицензия Банка России &#8470;&nbsp;354, 117420, г. Москва,
+            ул. Наметкина, д.&nbsp;16, корпус 1. <a class="footer__copyright-link" href="#">Политика обработки
+              и&nbsp;защиты персональных данных</a>
+          </p>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <ul class="footer__inner-list">
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#">
+                  Вакансии
+                </a>
+              </li>
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#">
+                  События
+                </a>
+              </li>
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#">
+                  Блог
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__inner-list">
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#">
+                  Стартапам
+                </a>
+              </li>
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#">
+                  Digital start
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Вконтакте
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

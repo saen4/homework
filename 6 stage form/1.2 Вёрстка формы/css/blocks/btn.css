@@ -1,0 +1,64 @@
+.btn {
+    background-color: #476BF0;
+    border: none;
+    padding: 14px;
+    width: 386px;
+    border-radius: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3356D7;
+}
+
+.btn:focus-visible {
+    background-color: #2143C1;
+    outline: none;
+}
+
+.btn:disabled {
+    background-color: #DBDFEB;
+    color: #777C9B;
+}
+
+.btn--forgot {
+    color: #777C9B;
+    background-color: #DBDFEB;
+
+}
+
+.btn--forgot-back {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px 0px rgba(16, 26, 59, 0.1);
+    width: 48px;
+    height: 48px;
+    padding: 14px;
+    position: absolute;
+    top: 22px;
+    left: -24px;
+}
+
+.btn--registration {
+    margin: 0 0 24px;
+}
+
+.btn:hover .forgot-form__btn-icon {
+    color: #476BF0;
+}
+
+.btn:focus-visible .forgot-form__btn-icon {
+    color: #476BF0;
+}
+
+.btn--forgot-back:hover {
+    background-color: #ffffff; 
+}
+
+.btn--forgot-back:focus-visible {
+    background-color: #ffffff; 
+}

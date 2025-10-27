@@ -1,0 +1,62 @@
+.header {
+  padding: 25px 0 23px;
+  border-bottom: 1px solid $color-gainsboro;
+
+  @include vp-1023 {
+    padding: 16px 0;
+  }
+
+  @include vp-767 {
+    padding: 18px 0;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 23px;
+    margin: 0 72px 0 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @include vp-1023 {
+      width: 52px;
+      height: 20px;
+      left: unset;
+      right: 0;
+      margin: 0;
+    }
+  }
+
+  &__menu-icon {
+    width: 52px;
+    height: 20px;
+  }
+
+  &__logo-link {
+    color: $color-blue-charcoa;
+  }
+
+  &__logo {
+    @include vp-1023 {
+      width: 105px;
+      height: 24px;
+    }
+
+    @include vp-767 {
+      width: 88px;
+      height: 20px;
+    }
+  }
+}
+
