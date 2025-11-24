@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <form id="film-form">
+    <label for="title">Название:</label><br />
+    <input type="text" id="title" name="title" /><br />
+    <label for="genre">Жанр:</label><br />
+    <input type="text" id="genre" name="genre" /><br />
+    <label for="releaseYear">Год:</label><br />
+    <input type="text" id="releaseYear" name="releaseYear" required /><br />
+    <input type="checkbox" id="isWatched" name="isWatched" />
+    <label for="isWatched">Успели посмотреть?</label><br />
+
+    <!-- <input type="submit" value="Submit"> -->
+    <button type="submit">Добавить</button>
+    <button class="cancel-edit-btn" type="button">Отменить редактирование</button>
+
+  </form>
+  <table id="film-table">
+    <div class="film-table__sorting-wrapper">
+      <select class="film-table__field" name="sorting" id="sorting">
+        <option id="titleSort" value="titleSort">По названию</option>
+        <option id="genreSort" value="genreSort">По жанру</option>
+        <option id="releaseYearSort" value="releaseYearSort">По году</option>
+        <option id="isWatchedSort" value="isWatchedSort">Просмотрено</option>
+      </select>
+      <button class="film-table__sorting-button" type="button">Сортировать</button>
+    </div>
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Жанр</th>
+        <th>Год</th>
+        <th>Успели посмотреть?</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody id="film-tbody">
+      <!-- Rows will be inserted here -->
+    </tbody>
+  </table>
+
+</body>
+
+</html>

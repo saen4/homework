@@ -1,0 +1,44 @@
+/* global */
+/* -------------------------------------------- */
+.container {
+  max-width: 1064px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* blocks */
+/* -------------------------------------------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.form__gender {
+  display: flex;
+  align-items: center;
+}
+.form__gender, .form__interests {
+  border: none;
+  padding: 0;
+}
+.form__button {
+  padding: 5px 0px;
+  min-width: 100px;
+}
+
+.custom-textarea {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.custom-range {
+  display: flex;
+  align-items: center;
+}
+
+.survey-form__results-title {
+  font-size: 36px;
+}/*# sourceMappingURL=style.css.map */

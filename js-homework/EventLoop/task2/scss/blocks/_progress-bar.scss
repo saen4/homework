@@ -1,0 +1,17 @@
+.progress-bar {
+    height: 20px;
+    max-width: 500px;
+    background-color: #276ceb;
+    border-radius: 8px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform linear;
+    margin: 20px 0;
+
+    &__timer {
+        margin-top: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #000000;
+    }
+}

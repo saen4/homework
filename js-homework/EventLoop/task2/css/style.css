@@ -1,0 +1,41 @@
+/*Global*/
+/*----- ----- -----*/
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Regular.woff2") format("woff2"), url("../fonts/TTNormsPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/TTNormsPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: 1064px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/*Blocks*/
+/*----- ----- -----*/
+.progress-bar {
+  height: 20px;
+  max-width: 500px;
+  background-color: #276ceb;
+  border-radius: 8px;
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform linear;
+  margin: 20px 0;
+}
+.progress-bar__timer {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */

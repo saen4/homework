@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="survey-form">
+            <div class="container">
+                <h1 class="survey-form__title">Форма опроса</h1>
+                <form class="form" action="#" method="post">
+                    <div class="custom-input">
+                        <label class="custom-input__label" for="user-name">Имя пользователя:</label>
+                        <input class="custom-input__field" type="text" id="user-name" name="user-name" required>
+                    </div>
+                    <div class="custom-input">
+                        <label class="custom-input__label" for="user-email">Email:</label>
+                        <input class="custom-input__field" type="email" id="user-email" name="user-email" required>
+                    </div>
+                    <fieldset class="form__gender">
+                        <span class="form__text">Пол:</span>
+                        <div class="custom-radio">
+                            <input class="custom-input__field" type="radio" name="gender" id="man" value="man" checked>
+                            <label class="custom-input__label" for="man">Мужской</label>
+                        </div>
+                        <div class="custom-radio">
+                            <input class="custom-input__field" type="radio" name="gender" id="woman" value="woman">
+                            <label class="custom-input__label" for="woman">Женский</label>
+                        </div>
+                    </fieldset>
+                    <div class="custom-range">
+                        <label class="custom-input__label" for="evaluation">Оценка сервиса:</label>
+                        <input class="custom-input__field" type="range" name="evaluation" id="evaluation" min="1"
+                            max="10" step="1">
+                    </div>
+                    <fieldset class="form__interests">
+                        <span class="form__text">Интересы пользователя:</span>
+                        <div class="custom-checkbox">
+                            <input class="custom-checkbox__field" type="checkbox" name="interests" id="sport"
+                                value="sport">
+                            <label class="custom-checkbox__label" for="sport">Спорт</label>
+                        </div>
+                        <div class="custom-checkbox">
+                            <input class="custom-checkbox__field" type="checkbox" name="interests" id="music"
+                                value="music">
+                            <label class="custom-checkbox__label" for="music">Музыка</label>
+                        </div>
+                        <div class="custom-checkbox">
+                            <input class="custom-checkbox__field" type="checkbox" name="interests" id="trips"
+                                value="trips">
+                            <label class="custom-checkbox__label" for="trips">Путешествия</label>
+                        </div>
+                        <div class="custom-checkbox">
+                            <input class="custom-checkbox__field" type="checkbox" name="interests" id="movie"
+                                value="movie">
+                            <label class="custom-checkbox__label" for="movie">Кино</label>
+                        </div>
+                    </fieldset>
+                    <div class="custom-textarea">
+                        <label class="custom-textarea__label" for="comments">Дополнительные комментарии:</label>
+                        <textarea class="custom-textarea__field" name="comments" id="comments" rows="5"></textarea>
+                    </div>
+                    <button class="form__button" type="submit">Отправить</button>
+                </form>
+                <div class="survey-form__results"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

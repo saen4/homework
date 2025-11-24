@@ -1,0 +1,39 @@
+.growth {
+    padding: 40px;
+}
+
+.growth__title {
+    margin: 0 0 40px;
+    font-size: 40px;
+}
+
+.growth__wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.growth__btn {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.growth__btn--add {
+    background-color: #26c94f;
+}
+
+.growth__btn--filter {
+    background-color: #ff7300;
+}
+
+.growth__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
