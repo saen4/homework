@@ -1,0 +1,22 @@
+.basket {
+    padding: 40px;
+}
+
+.basket__btn {
+    border: none;
+    background-color: #3ab601;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 0 0 40px;
+}
+
+.basket__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}

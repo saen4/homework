@@ -1,0 +1,13 @@
+.calculator {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 0 40px;
+        align-items: flex-start;
+    }
+
+    &__form-error {
+        color: #ff0000;
+    }
+}

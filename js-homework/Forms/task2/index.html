@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="calculator">
+            <h1 class="calculator__title">Калькулятор стоимости доставки</h1>
+            <form class="calculator__form" action="#" method="post">
+                <div class="custom-input">
+                    <label class="custom-input__label" for="product-name">Название товара:</label>
+                    <input class="custom-input__field" type="text" id="product-name" name="product-name">
+                </div>
+                <div class="custom-input">
+                    <label class="custom-input__label" for="product-weight">Вес товара (кг):</label>
+                    <input class="custom-input__field" type="number" id="product-weight" name="product-weight" required>
+                </div>
+                <div class="custom-input">
+                    <label class="custom-input__label" for="delivery-distance">Расстояние доставки (км):</label>
+                    <input class="custom-input__field" type="number" id="delivery-distance" name="delivery-distance"
+                        required>
+                </div>
+                <button class="calculator__from-btn" type="submit">Добавить товар</button>
+            </form>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Название товара</th>
+                        <th>Вес (кг)</th>
+                        <th>Расстояние (км)</th>
+                        <th>Стоимость доставки</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

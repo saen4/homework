@@ -1,0 +1,30 @@
+.library {
+    padding: 40px;
+}
+
+.library__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.library-btn {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.library-btn--add {
+    background-color: #29b606;
+}
+
+.library-btn--search {
+    background-color: #0e0aff;
+}
+
+.library__list {
+    padding: 0;
+    list-style-type: none;
+}

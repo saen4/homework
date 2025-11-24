@@ -1,0 +1,66 @@
+/*Global*/
+/*----- ----- -----*/
+body {
+  background-color: #c4d3db;
+  font-family: "TTNormsPro", "Arial", sans-serif;
+}
+
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Regular.woff2") format("woff2"), url("../fonts/TTNormsPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/TTNormsPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: 1064px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/*Blocks*/
+/*----- ----- -----*/
+.promocode-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 340px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.promocode-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+.promocode-form__button {
+  background-color: #71aef3;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.promocode-form__button:hover {
+  background-color: #5889c0;
+}
+.promocode-form__input {
+  width: 200px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+.promocode-form__message {
+  font-size: 18px;
+  color: #00e600;
+}/*# sourceMappingURL=style.css.map */

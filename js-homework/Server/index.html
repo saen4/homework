@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление фильмами</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Мои фильмы</h1>
+    <form id="film-form">
+        <label for="title">Название:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <span class="error" id="title-error"></span><br>
+
+        <label for="genre">Жанр:</label><br>
+        <input type="text" id="genre" name="genre"><br>
+        <span class="error" id="genre-error"></span><br>
+
+        <label for="releaseYear">Год:</label><br>
+        <input type="text" id="releaseYear" name="releaseYear"><br>
+        <span class="error" id="releaseYear-error"></span><br>
+
+        <input type="checkbox" id="isWatched" name="isWatched">
+        <label for="isWatched">Успели посмотреть?</label><br>
+
+        <input type="submit" value="Добавить фильм">
+    </form>
+
+    <div class="filter-panel">
+        <div class="filter-panel__wrapper">
+            <input class="filter-panel__field" type="text" placeholder="Название фильма" id="filter-name">
+            <input class="filter-panel__field" type="text" placeholder="Жанр" id="filter-genre">
+            <input class="filter-panel__field" type="text" placeholder="Год релиза" id="filter-year">
+            <select class="filter-panel__field" name="" id="filter-watched">
+                <option value="all-films">Все</option>
+                <option value="viewed">Просмотренные</option>
+                <option value="not-viewed">Не просмотренные</option>
+            </select>
+        </div>
+        <button class="filter-panel__button" id="delete-all">Удалить всё</button>
+    </div>
+
+    <table id="film-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Успели посмотреть?</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="film-tbody">
+            <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+
+</body>
+
+</html>

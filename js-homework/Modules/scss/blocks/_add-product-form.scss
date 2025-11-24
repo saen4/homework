@@ -1,0 +1,31 @@
+.add-product-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+
+    &__title {
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    &__input {
+        margin: 0 0 20px 0;
+        padding: 8px 12px;
+        border-radius: 20px;
+        border: none;
+    }
+
+    &__submit {
+        border: none;
+        padding: 8px 12px;
+        border-radius: 20px;
+        background-color: #21867e;
+        color: #ffffff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #19645e;
+        }
+    }
+}

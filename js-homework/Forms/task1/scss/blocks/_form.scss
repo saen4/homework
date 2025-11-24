@@ -1,0 +1,23 @@
+.form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+    &__gender {
+        display: flex;
+        align-items: center;
+    }
+
+    &__gender,
+    &__interests {
+        border: none;
+        padding: 0;
+    }
+
+    &__button {
+        padding: 5px 0px;
+        min-width: 100px;
+    }
+}
